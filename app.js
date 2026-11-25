@@ -881,8 +881,9 @@ function renderBodyText(rawText) {
 function renderMeditation(plan, entry) {
   const panel = document.getElementById("meditation");
   const day = entry?.dayIndex;
-  const start = Number.isInteger(day) && day >= 385
-    ? day - (day - 385) % 7
+  const firstDay = day >= 385 ? 385 : 1;
+  const start = Number.isInteger(day) && day >= firstDay
+    ? day - (day - firstDay) % 7
     : null;
   const week = plan?.id === DWELLING_PLAN_ID ? meditationWeeks[start] : null;
   panel.hidden = !week;

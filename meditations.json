@@ -1,6 +1,158 @@
 {
   "version": 1,
   "weeks": {
+    "1": {
+      "title": "Made in God’s Image",
+      "reference": "Genesis 1:27",
+      "context": "Genesis 1:24–31",
+      "studyConnection": "Genesis opens with God bringing life into being and giving human beings a distinct place within creation.",
+      "verseContext": "The verse names both male and female as people God made in his image.",
+      "phrases": [
+        {
+          "quote": "So God created man in his own image; he created him in the image of God;",
+          "question": "What changes when I remember that my worth begins with how God made me?",
+          "prayer": "Creator, help me receive the worth you’ve given me."
+        },
+        {
+          "quote": "he created them male and female.",
+          "question": "Who is easy for me to overlook, and how might I see them differently as someone God made in his image?",
+          "prayer": "God, help me see and honor the person in front of me."
+        }
+      ]
+    },
+    "8": {
+      "title": "Abram Believed the Lord",
+      "reference": "Genesis 15:6",
+      "context": "Genesis 15:1–6",
+      "studyConnection": "Abram tells God he still has no child. God takes him outside and promises offspring as numerous as the stars.",
+      "verseContext": "Abram trusts the Lord’s promise while the circumstances he just described still stand.",
+      "phrases": [
+        {
+          "quote": "Abram believed the Lord,",
+          "question": "What is hard to trust about God while my circumstances stay the same?",
+          "prayer": "Lord, help me trust you in what I can’t yet see."
+        },
+        {
+          "quote": "and he credited it to him as righteousness.",
+          "question": "Where do I feel that I have to prove myself before I can trust God to receive me?",
+          "prayer": "Lord, help me lean on you where I’m trying to prove myself."
+        }
+      ]
+    },
+    "15": {
+      "title": "God Himself Will Provide",
+      "reference": "Genesis 22:8",
+      "context": "Genesis 22:6–14",
+      "studyConnection": "Isaac asks Abraham where the lamb is. Abraham answers before either of them sees the ram God provides.",
+      "verseContext": "These are Abraham’s words to Isaac during a particular test. God stops Abraham and provides a ram in Isaac’s place.",
+      "phrases": [
+        {
+          "quote": "Abraham answered, “God himself will provide the lamb for the burnt offering, my son.”",
+          "question": "Where is it hard to trust God when I can’t see how he will provide?",
+          "prayer": "God, help me trust you while I wait."
+        },
+        {
+          "quote": "Then the two of them walked on together.",
+          "question": "What step can I take in trust while I still have unanswered questions?",
+          "prayer": "Lord, give me enough trust for the next step."
+        }
+      ]
+    },
+    "22": {
+      "title": "The Lord Is in This Place",
+      "reference": "Genesis 28:16b",
+      "context": "Genesis 28:10–17",
+      "studyConnection": "Jacob is traveling away from home when God meets him in a dream and promises to be with him wherever he goes.",
+      "verseContext": "Jacob speaks these words after waking. He recognizes God’s presence in a place where he had simply stopped for the night.",
+      "phrases": [
+        {
+          "quote": "Surely the Lord is in this place,",
+          "question": "What ordinary place in my day could I receive as a place to pay attention to God?",
+          "prayer": "Lord, help me notice your presence where I already am."
+        },
+        {
+          "quote": "and I did not know it.",
+          "question": "When have I recognized God’s care only after looking back?",
+          "prayer": "Lord, help me see what I missed and thank you for it."
+        }
+      ]
+    },
+    "29": {
+      "title": "Remembering Your Kindness",
+      "reference": "Genesis 32:10a",
+      "context": "Genesis 32:6–12",
+      "studyConnection": "Jacob hears that Esau is approaching with four hundred men. Before they meet, Jacob prays and remembers what God has already done.",
+      "verseContext": "Jacob remembers God’s kindness as part of a prayer that also names his real fear of Esau.",
+      "phrases": [
+        {
+          "quote": "I am unworthy of all the kindness and faithfulness",
+          "question": "What kindness have I come to take for granted?",
+          "prayer": "God, help me receive your kindness again with gratitude."
+        },
+        {
+          "quote": "you have shown your servant.",
+          "question": "What past sign of God’s faithfulness can I remember as I bring him a fear today?",
+          "prayer": "Lord, thank you for how you’ve cared for me. Hear what I’m afraid of now."
+        }
+      ]
+    },
+    "36": {
+      "title": "With Joseph in Prison",
+      "reference": "Genesis 39:21",
+      "context": "Genesis 39:19–23",
+      "studyConnection": "Joseph is imprisoned after being falsely accused. The story names God’s presence with him while he is still there.",
+      "verseContext": "God’s kindness in this scene includes favor with the prison warden. Joseph’s circumstances have yet to change.",
+      "phrases": [
+        {
+          "quote": "But the Lord was with Joseph and extended kindness to him.",
+          "question": "Where is it hardest for me to believe God is with me while the situation is still unresolved?",
+          "prayer": "Lord, meet me in what hasn’t changed."
+        },
+        {
+          "quote": "He granted him favor with the prison warden.",
+          "question": "What ordinary act of kindness might I have missed because I was looking for a bigger change?",
+          "prayer": "Lord, help me recognize and receive the kindness you’re giving me today."
+        }
+      ]
+    },
+    "43": {
+      "title": "The Survival of Many",
+      "reference": "Genesis 50:20",
+      "context": "Genesis 50:15–21",
+      "studyConnection": "After Jacob dies, Joseph’s brothers fear that Joseph will take revenge. Joseph names the harm they intended, explains what God brought about, and promises to provide for them.",
+      "verseContext": "Joseph is looking back on a specific wrong and the lives that were preserved through what followed.",
+      "phrases": [
+        {
+          "quote": "You planned evil against me;",
+          "question": "What wrong do I need to name honestly before God?",
+          "prayer": "Lord, help me tell the truth about what hurt."
+        },
+        {
+          "quote": "God planned it for good to bring about the present result—the survival of many people.",
+          "question": "Is there any good I can name today without pretending the harm was good?",
+          "prayer": "Lord, help me notice the good you’ve brought and trust you where I still have questions."
+        }
+      ]
+    },
+    "50": {
+      "title": "Come to Me",
+      "reference": "Matthew 11:28",
+      "context": "Matthew 11:25–30",
+      "studyConnection": "Jesus invites the weary to come to him. In the next verses he asks them to take his yoke and learn from him because he is gentle and humble.",
+      "verseContext": "Jesus’ promise of rest is an invitation to come to him and learn his way.",
+      "phrases": [
+        {
+          "quote": "Come to me, all of you who are weary and burdened,",
+          "question": "What burden am I carrying as though I have to carry it alone?",
+          "prayer": "Jesus, I’m weary. Help me come to you with what I’m carrying."
+        },
+        {
+          "quote": "and I will give you rest.",
+          "question": "What makes it hard to receive the rest Jesus offers?",
+          "prayer": "Jesus, teach me to receive your rest and learn from you."
+        }
+      ]
+    },
     "385": {
       "title": "Make Room for Someone Else’s Joy",
       "studyConnection": "In 2 Samuel 1, David grieves for Saul and Jonathan and honors them publicly. Saul had made David’s life harder, yet David could still speak honestly about what was worth honoring in him.",
