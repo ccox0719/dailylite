@@ -927,6 +927,7 @@ function renderMeditation(plan, entry) {
 function renderCurrentEntry() {
   const readingTitle = document.getElementById("readingTitle");
   const readingRef = document.getElementById("readingRef");
+  const scriptureReference = document.getElementById("scriptureReference");
   const readingBody = document.getElementById("readingBody");
   const readingQuestions = document.getElementById("readingQuestions");
   const readingPrayer = document.getElementById("readingPrayer");
@@ -942,6 +943,7 @@ function renderCurrentEntry() {
   if (!plan || !Array.isArray(plan.entries) || plan.entries.length === 0) {
     readingTitle.textContent = "No reading for today";
     readingRef.textContent = "";
+    scriptureReference.textContent = "";
     readingBody.textContent =
       "There is no entry for today in the active plan.\n\n" +
       "You can add one via the plan editor below.";
@@ -961,7 +963,9 @@ function renderCurrentEntry() {
   const entry = entries[idx];
 
   readingTitle.textContent = entry?.title || "Untitled";
-  readingRef.textContent = entry?.reference || "";
+  const reference = entry?.reference || "";
+  readingRef.textContent = reference;
+  scriptureReference.textContent = reference ? ` · ${reference}` : "";
   renderBodyText(entry?.body || "");
   readingQuestions.textContent = entry?.questions || "";
   readingPrayer.textContent = entry?.prayer || "";

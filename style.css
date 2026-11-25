@@ -121,7 +121,7 @@ button {
 .app {
   width: 100%;
   max-width: 640px;
-  padding: max(20px, env(safe-area-inset-top)) 28px 140px;
+  padding: max(12px, env(safe-area-inset-top)) 28px 140px;
 }
 
 /* ===========================================================
@@ -229,7 +229,7 @@ button {
 }
 
 .reading-head {
-  margin: 14px 0 36px;
+  margin: 8px 0 20px;
 }
 
 .reading-eyebrow {
@@ -465,7 +465,7 @@ button {
    =========================================================== */
 .meditation {
   margin: 4px 0 8px;
-  padding: 34px 0 30px;
+  padding: 20px 0 24px;
   border-top: 1px solid var(--rule-strong);
   border-bottom: 1px solid var(--rule);
   position: relative;
@@ -522,7 +522,7 @@ button {
 }
 
 .meditation h1 {
-  margin: 22px 0 26px;
+  margin: 14px 0 18px;
   font-family: var(--font-walk);
   font-weight: 500;
   font-style: italic;
@@ -972,11 +972,11 @@ button {
    =========================================================== */
 @media (min-width: 700px) {
   .app {
-    padding-top: 40px;
+    padding-top: 24px;
   }
 
   .reading-head {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 }
 
