@@ -43,7 +43,7 @@ const FONT_FAMILIES = [
     stack: '"Merriweather", "Source Sans 3", serif'
   }
 ];
-const DEFAULT_PLAN_BUNDLE = {
+const LEGACY_DEFAULT_PLAN = {
   id: "default",
   name: "Default Devotional",
   startDate: "2025-01-01",
@@ -517,32 +517,40 @@ function savePlanProgress() {
   }
 }
 
-function loadPlans() {
+async function loadDefaultPlan() {
   try {
-    const stored = readStoredPlans();
-    if (stored.length > 0) {
-      const plans = stored.map(clonePlan);
-      if (!plans.some(p => p.id === DEFAULT_PLAN_BUNDLE.id)) {
-        plans.push(clonePlan(DEFAULT_PLAN_BUNDLE));
-      }
-      return plans;
+    const response = await fetch("./dwelling-with-god.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const plan = await response.json();
+    if (!plan.id || !Array.isArray(plan.entries) || plan.entries.length === 0) {
+      throw new Error("Invalid default study");
     }
-    return [clonePlan(DEFAULT_PLAN_BUNDLE)];
-  } catch (e) {
-    console.error("Failed to parse plans from storage", e);
-    return [clonePlan(DEFAULT_PLAN_BUNDLE)];
+    return { ...plan, startDate: getTodayIso() };
+  } catch (error) {
+    console.warn("Could not load the bundled study", error);
+    return null;
   }
+}
+
+function loadPlans(defaultPlan) {
+  const plans = readStoredPlans();
+  if (defaultPlan && !plans.some(plan => plan.id === defaultPlan.id)) {
+    plans.unshift(defaultPlan);
+  }
+  return plans.length ? plans : [clonePlan(LEGACY_DEFAULT_PLAN)];
 }
 
 function savePlans(plans) {
   localStorage.setItem(STORAGE_KEY_PLANS, JSON.stringify(plans));
 }
 
-function loadActivePlanId(plans) {
+function loadActivePlanId(plans, defaultPlan) {
   const stored = localStorage.getItem(STORAGE_KEY_ACTIVE);
-  if (stored && plans.some(p => p.id === stored)) return stored;
-  // default to first
-  return plans[0]?.id;
+  const active = plans.find(plan => plan.id === stored);
+  if (defaultPlan && JSON.stringify(active) === JSON.stringify(LEGACY_DEFAULT_PLAN)) {
+    return defaultPlan.id;
+  }
+  return active?.id ?? defaultPlan?.id ?? plans[0]?.id;
 }
 
 function saveActivePlanId(planId) {
@@ -1031,9 +1039,10 @@ const navigationControls = {
 const bsbCache = new Map();
 let lastBsbRequest = null;
 
-function init() {
-  state.plans = loadPlans();
-  state.activePlanId = loadActivePlanId(state.plans);
+async function init() {
+  const defaultPlan = await loadDefaultPlan();
+  state.plans = loadPlans(defaultPlan);
+  state.activePlanId = loadActivePlanId(state.plans, defaultPlan);
   state.planProgress = loadPlanProgress();
   state.currentEntryIndex = getInitialEntryIndexForPlan(getCurrentPlan());
   if (state.currentEntryIndex >= 0) {
@@ -1050,7 +1059,7 @@ function init() {
   saveActivePlanId(state.activePlanId);
 
   setupPlanSelect();
-  wireMenu();
+  wireMenu(defaultPlan);
   wireEditor();
   setupPlanUpload();
   wireUploadShortcut();
@@ -1103,7 +1112,7 @@ function broadcastPlanChange(planId) {
   );
 }
 
-function wireMenu() {
+function wireMenu(defaultPlan) {
   const menuToggle = document.getElementById("menuToggle");
   const menuPanel = document.getElementById("menuPanel");
   const resetSampleBtn = document.getElementById("resetSampleBtn");
@@ -1132,16 +1141,17 @@ function wireMenu() {
     }
   });
 
+  resetSampleBtn.disabled = !defaultPlan;
   resetSampleBtn.addEventListener("click", () => {
-      const plan = clonePlan(DEFAULT_PLAN_BUNDLE);
-      state.plans = [plan];
-      state.activePlanId = plan.id;
+    const plan = findPlanById(state.plans, defaultPlan.id);
+    if (!plan) state.plans.unshift(clonePlan(defaultPlan));
+    state.activePlanId = defaultPlan.id;
     savePlans(state.plans);
     saveActivePlanId(state.activePlanId);
     setupPlanSelect();
     state.currentEntryIndex = -1;
-    setEntryIndex(getInitialEntryIndexForPlan(plan));
-    showToast("Sample plan restored");
+    setEntryIndex(getInitialEntryIndexForPlan(getCurrentPlan()));
+    showToast("Default study selected");
     broadcastPlanChange(state.activePlanId);
   });
 

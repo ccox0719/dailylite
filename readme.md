@@ -10,7 +10,7 @@ Lightweight SPA that renders a daily devotional, keeps plans in `localStorage`, 
 
 ## Plans & editing
 
-- **Sample plan**: A seven-day plan is bundled in `app.js`; you can reset it using the “Reset to sample plan” menu action when needed.
+- **Default study**: Daily Lite opens new users on Day 1 of Dwelling With God, bundled in `dwelling-with-god.json`. Use “Switch to default study” in the menu to return to it.
 - **CSV import**: Drop a CSV (see the provided samples) onto the “Select CSV” button. The parser maps recognized columns (`day`, `date`, `title`, `reference`, `body`, `questions`, `prayer`, etc.) into plan entries, but the textual Scripture text in the CSV is discarded because the app fetches the BSB text online. Use the `body` column for reflections instead.
 - **JSON editor**: Use the “Edit active plan (JSON)” modal to tweak your plan; once saved, it overwrites the active plan in `localStorage` and the UI refreshes.
 - **Plan hook**: The `<select id="planSelect">` element keeps a `data-active-plan-id` attribute and dispatches a `planchange` `CustomEvent` whenever a new plan becomes active so other scripts can react.
