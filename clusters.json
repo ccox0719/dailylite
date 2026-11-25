@@ -1,0 +1,544 @@
+[
+  {
+    "theme_bucket": "1. Creation & Word",
+    "theme": "The Word Creates",
+    "readings": [
+      { "date": "2025-01-01", "reference": "Genesis 1", "echo_type": "Typology" },
+      { "date": "2025-01-02", "reference": "John 1", "echo_type": "Typology" },
+      { "date": "2025-01-03", "reference": "Colossians 1", "echo_type": "Typology" }
+    ]
+  },
+  {
+    "theme_bucket": "1. Creation & Word",
+    "theme": "Image & Dominion",
+    "readings": [
+      { "date": "2025-01-04", "reference": "Genesis 2", "echo_type": "Typology" },
+      { "date": "2025-01-05", "reference": "Psalm 8", "echo_type": "Reflection" },
+      { "date": "2025-01-06", "reference": "Hebrews 2", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "2. Fall & Promise",
+    "theme": "The Fall & the Promise",
+    "readings": [
+      { "date": "2025-01-07", "reference": "Genesis 3", "echo_type": "Typology" },
+      { "date": "2025-01-08", "reference": "Romans 5", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Faith that Saves",
+    "readings": [
+      { "date": "2025-01-09", "reference": "Genesis 12", "echo_type": "Typology" },
+      { "date": "2025-01-10", "reference": "Galatians 3", "echo_type": "Fulfillment" },
+      { "date": "2025-01-11", "reference": "Hebrews 11", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "God Provides the Lamb",
+    "readings": [
+      { "date": "2025-01-12", "reference": "Genesis 22", "echo_type": "Typology" },
+      { "date": "2025-01-13", "reference": "John 3", "echo_type": "Fulfillment" },
+      { "date": "2025-01-14", "reference": "Romans 8", "echo_type": "Application" },
+      { "date": "2025-01-15", "reference": "Psalm 23", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Deliverance Through Water",
+    "readings": [
+      { "date": "2025-01-16", "reference": "Exodus 14", "echo_type": "Typology" },
+      { "date": "2025-01-17", "reference": "Joshua 3", "echo_type": "Typology" },
+      { "date": "2025-01-18", "reference": "Matthew 14", "echo_type": "Fulfillment" },
+      { "date": "2025-01-19", "reference": "Romans 6", "echo_type": "Application" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "The Covenant and the Kingdom",
+    "readings": [
+      { "date": "2025-01-20", "reference": "Exodus 19", "echo_type": "Typology" },
+      { "date": "2025-01-21", "reference": "Exodus 20", "echo_type": "Instruction" },
+      { "date": "2025-01-22", "reference": "Matthew 5", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Bread from Heaven",
+    "readings": [
+      { "date": "2025-01-23", "reference": "Exodus 16", "echo_type": "Typology" },
+      { "date": "2025-01-24", "reference": "John 6", "echo_type": "Fulfillment" },
+      { "date": "2025-01-25", "reference": "Psalm 78", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "6. Worship & Presence",
+    "theme": "Presence of God",
+    "readings": [
+      { "date": "2025-01-26", "reference": "Exodus 3", "echo_type": "Typology" },
+      { "date": "2025-01-27", "reference": "Exodus 40", "echo_type": "Typology" },
+      { "date": "2025-01-28", "reference": "Acts 2", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "10. Church & Mission",
+    "theme": "Chosen & Sent",
+    "readings": [
+      { "date": "2025-01-29", "reference": "Isaiah 6", "echo_type": "Typology" },
+      { "date": "2025-01-30", "reference": "Matthew 28", "echo_type": "Instruction" },
+      { "date": "2025-01-31", "reference": "Acts 9", "echo_type": "Mission" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "The True King",
+    "readings": [
+      { "date": "2025-02-01", "reference": "1 Samuel 16", "echo_type": "Typology" },
+      { "date": "2025-02-02", "reference": "Psalm 2", "echo_type": "Reflection" },
+      { "date": "2025-02-03", "reference": "Luke 1", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "6. Worship & Presence",
+    "theme": "Shepherd & Flock",
+    "readings": [
+      { "date": "2025-02-04", "reference": "Ezekiel 34", "echo_type": "Typology" },
+      { "date": "2025-02-05", "reference": "John 10", "echo_type": "Fulfillment" },
+      { "date": "2025-02-06", "reference": "1 Peter 5", "echo_type": "Application" }
+    ]
+  },
+  {
+    "theme_bucket": "8. Cross & Covenant Renewal",
+    "theme": "Suffering Servant",
+    "readings": [
+      { "date": "2025-02-07", "reference": "Isaiah 53", "echo_type": "Prophecy" },
+      { "date": "2025-02-08", "reference": "Psalm 22", "echo_type": "Reflection" },
+      { "date": "2025-02-09", "reference": "Matthew 27", "echo_type": "Fulfillment" },
+      { "date": "2025-02-10", "reference": "Philippians 2", "echo_type": "Application" }
+    ]
+  },
+  {
+    "theme_bucket": "8. Cross & Covenant Renewal",
+    "theme": "The Lamb & the Exodus",
+    "readings": [
+      { "date": "2025-02-11", "reference": "Exodus 12", "echo_type": "Typology" },
+      { "date": "2025-02-12", "reference": "Luke 22", "echo_type": "Fulfillment" },
+      { "date": "2025-02-13", "reference": "John 19", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "9. Resurrection & Spirit",
+    "theme": "Resurrection Hope",
+    "readings": [
+      { "date": "2025-02-14", "reference": "Job 19", "echo_type": "Typology" },
+      { "date": "2025-02-15", "reference": "Luke 24", "echo_type": "Fulfillment" },
+      { "date": "2025-02-16", "reference": "1 Corinthians 15", "echo_type": "Doctrine" }
+    ]
+  },
+  {
+    "theme_bucket": "9. Resurrection & Spirit",
+    "theme": "Spirit & New Heart",
+    "readings": [
+      { "date": "2025-02-17", "reference": "Ezekiel 36", "echo_type": "Prophecy" },
+      { "date": "2025-02-18", "reference": "John 14", "echo_type": "Instruction" },
+      { "date": "2025-02-19", "reference": "Acts 2", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "11. Perseverance & Hope",
+    "theme": "Faith in Trial",
+    "readings": [
+      { "date": "2025-02-20", "reference": "Daniel 6", "echo_type": "Typology" },
+      { "date": "2025-02-21", "reference": "James 1", "echo_type": "Instruction" },
+      { "date": "2025-02-22", "reference": "Hebrews 12", "echo_type": "Exhortation" }
+    ]
+  },
+  {
+    "theme_bucket": "7. Prophets & Promise",
+    "theme": "God’s Justice & Mercy",
+    "readings": [
+      { "date": "2025-02-23", "reference": "Jonah 1", "echo_type": "Typology" },
+      { "date": "2025-02-24", "reference": "Jonah 4", "echo_type": "Typology" },
+      { "date": "2025-02-25", "reference": "Luke 15", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "12. New Creation & Glory",
+    "theme": "The Kingdom Grows",
+    "readings": [
+      { "date": "2025-02-26", "reference": "Isaiah 9", "echo_type": "Prophecy" },
+      { "date": "2025-02-27", "reference": "Mark 4", "echo_type": "Instruction" },
+      { "date": "2025-02-28", "reference": "Acts 1", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "12. New Creation & Glory",
+    "theme": "All Things New",
+    "readings": [
+      { "date": "2025-03-01", "reference": "Ezekiel 37", "echo_type": "Prophecy" },
+      { "date": "2025-03-02", "reference": "Revelation 21", "echo_type": "Fulfillment" },
+      { "date": "2025-03-03", "reference": "Psalm 96", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "1. Creation & Word",
+    "theme": "God Speaks & Forms",
+    "readings": [
+      { "date": "2025-03-04", "reference": "Genesis 4", "echo_type": "Story" },
+      { "date": "2025-03-05", "reference": "Genesis 5", "echo_type": "Story" },
+      { "date": "2025-03-06", "reference": "Psalm 139", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "1. Creation & Word",
+    "theme": "Judgment & Salvation",
+    "readings": [
+      { "date": "2025-03-07", "reference": "Genesis 6", "echo_type": "Story" },
+      { "date": "2025-03-08", "reference": "Genesis 7", "echo_type": "Story" },
+      { "date": "2025-03-09", "reference": "1 Peter 3", "echo_type": "Typology" }
+    ]
+  },
+  {
+    "theme_bucket": "1. Creation & Word",
+    "theme": "Covenant Promise",
+    "readings": [
+      { "date": "2025-03-10", "reference": "Genesis 8", "echo_type": "Story" },
+      { "date": "2025-03-11", "reference": "Genesis 9", "echo_type": "Story" },
+      { "date": "2025-03-12", "reference": "Isaiah 54", "echo_type": "Prophecy" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Nations & Scattering",
+    "readings": [
+      { "date": "2025-03-13", "reference": "Genesis 10", "echo_type": "Story" },
+      { "date": "2025-03-14", "reference": "Genesis 11", "echo_type": "Story" },
+      { "date": "2025-03-15", "reference": "Acts 17", "echo_type": "Mission" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Calling of Abraham",
+    "readings": [
+      { "date": "2025-03-16", "reference": "Genesis 13", "echo_type": "Story" },
+      { "date": "2025-03-17", "reference": "Genesis 14", "echo_type": "Story" },
+      { "date": "2025-03-18", "reference": "Hebrews 7", "echo_type": "Typology" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Covenant Sealed",
+    "readings": [
+      { "date": "2025-03-19", "reference": "Genesis 15", "echo_type": "Story" },
+      { "date": "2025-03-20", "reference": "Genesis 17", "echo_type": "Story" },
+      { "date": "2025-03-21", "reference": "Romans 4", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Sodom & Mercy",
+    "readings": [
+      { "date": "2025-03-22", "reference": "Genesis 18", "echo_type": "Story" },
+      { "date": "2025-03-23", "reference": "Genesis 19", "echo_type": "Story" },
+      { "date": "2025-03-24", "reference": "2 Peter 2", "echo_type": "Warning" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Promise Continued",
+    "readings": [
+      { "date": "2025-03-25", "reference": "Genesis 20", "echo_type": "Story" },
+      { "date": "2025-03-26", "reference": "Genesis 21", "echo_type": "Story" },
+      { "date": "2025-03-27", "reference": "Galatians 4", "echo_type": "Typology" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Wells & Oaths",
+    "readings": [
+      { "date": "2025-03-28", "reference": "Genesis 23", "echo_type": "Story" },
+      { "date": "2025-03-29", "reference": "Genesis 24", "echo_type": "Story" },
+      { "date": "2025-03-30", "reference": "Matthew 1", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Promise Multiplying",
+    "readings": [
+      { "date": "2025-03-31", "reference": "Genesis 25", "echo_type": "Story" },
+      { "date": "2025-04-01", "reference": "Genesis 26", "echo_type": "Story" },
+      { "date": "2025-04-02", "reference": "Romans 9", "echo_type": "Doctrine" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Jacob the Chosen",
+    "readings": [
+      { "date": "2025-04-03", "reference": "Genesis 27", "echo_type": "Story" },
+      { "date": "2025-04-04", "reference": "Genesis 28", "echo_type": "Story" },
+      { "date": "2025-04-05", "reference": "John 1", "echo_type": "Typology" }
+    ]
+  },
+  {
+    "theme_bucket": "6. Worship & Presence",
+    "theme": "God With Us",
+    "readings": [
+      { "date": "2025-04-06", "reference": "Genesis 29", "echo_type": "Story" },
+      { "date": "2025-04-07", "reference": "Genesis 30", "echo_type": "Story" },
+      { "date": "2025-04-08", "reference": "Matthew 1", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "6. Worship & Presence",
+    "theme": "Striving & Blessing",
+    "readings": [
+      { "date": "2025-04-09", "reference": "Genesis 31", "echo_type": "Story" },
+      { "date": "2025-04-10", "reference": "Genesis 32", "echo_type": "Story" },
+      { "date": "2025-04-11", "reference": "Hosea 12", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Return & Forgiveness",
+    "readings": [
+      { "date": "2025-04-12", "reference": "Genesis 33", "echo_type": "Story" },
+      { "date": "2025-04-13", "reference": "Genesis 34", "echo_type": "Story" },
+      { "date": "2025-04-14", "reference": "Colossians 3", "echo_type": "Instruction" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Altars & Names",
+    "readings": [
+      { "date": "2025-04-15", "reference": "Genesis 35", "echo_type": "Story" },
+      { "date": "2025-04-16", "reference": "Genesis 36", "echo_type": "Story" },
+      { "date": "2025-04-17", "reference": "Psalm 46", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Joseph’s Dreams",
+    "readings": [
+      { "date": "2025-04-18", "reference": "Genesis 37", "echo_type": "Story" },
+      { "date": "2025-04-19", "reference": "Genesis 38", "echo_type": "Story" },
+      { "date": "2025-04-20", "reference": "Matthew 2", "echo_type": "Typology" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Providence & Testing",
+    "readings": [
+      { "date": "2025-04-21", "reference": "Genesis 39", "echo_type": "Story" },
+      { "date": "2025-04-22", "reference": "Genesis 40", "echo_type": "Story" },
+      { "date": "2025-04-23", "reference": "James 1", "echo_type": "Instruction" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Exalted from Prison",
+    "readings": [
+      { "date": "2025-04-24", "reference": "Genesis 41", "echo_type": "Story" },
+      { "date": "2025-04-25", "reference": "Genesis 42", "echo_type": "Story" },
+      { "date": "2025-04-26", "reference": "Acts 7", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Reconciliation",
+    "readings": [
+      { "date": "2025-04-27", "reference": "Genesis 43", "echo_type": "Story" },
+      { "date": "2025-04-28", "reference": "Genesis 44", "echo_type": "Story" },
+      { "date": "2025-04-29", "reference": "Luke 15", "echo_type": "Illustration" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Reunion & Provision",
+    "readings": [
+      { "date": "2025-04-30", "reference": "Genesis 45", "echo_type": "Story" },
+      { "date": "2025-05-01", "reference": "Genesis 46", "echo_type": "Story" },
+      { "date": "2025-05-02", "reference": "Psalm 105", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Blessings & Prophecy",
+    "readings": [
+      { "date": "2025-05-03", "reference": "Genesis 47", "echo_type": "Story" },
+      { "date": "2025-05-04", "reference": "Genesis 48", "echo_type": "Story" },
+      { "date": "2025-05-05", "reference": "Revelation 7", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "3. Covenant & Faith",
+    "theme": "Final Words",
+    "readings": [
+      { "date": "2025-05-06", "reference": "Genesis 49", "echo_type": "Story" },
+      { "date": "2025-05-07", "reference": "Genesis 50", "echo_type": "Story" },
+      { "date": "2025-05-08", "reference": "John 20", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Oppression & Cry",
+    "readings": [
+      { "date": "2025-05-09", "reference": "Exodus 1", "echo_type": "Story" },
+      { "date": "2025-05-10", "reference": "Exodus 2", "echo_type": "Story" },
+      { "date": "2025-05-11", "reference": "Psalm 10", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Call of Moses",
+    "readings": [
+      { "date": "2025-05-12", "reference": "Exodus 3", "echo_type": "Story" },
+      { "date": "2025-05-13", "reference": "Exodus 4", "echo_type": "Story" },
+      { "date": "2025-05-14", "reference": "Acts 7", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Confrontation",
+    "readings": [
+      { "date": "2025-05-15", "reference": "Exodus 5", "echo_type": "Story" },
+      { "date": "2025-05-16", "reference": "Exodus 6", "echo_type": "Story" },
+      { "date": "2025-05-17", "reference": "Romans 9", "echo_type": "Doctrine" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Signs & Wonders",
+    "readings": [
+      { "date": "2025-05-18", "reference": "Exodus 7", "echo_type": "Story" },
+      { "date": "2025-05-19", "reference": "Exodus 8", "echo_type": "Story" },
+      { "date": "2025-05-20", "reference": "Revelation 16", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Plagues & Pharaoh",
+    "readings": [
+      { "date": "2025-05-21", "reference": "Exodus 9", "echo_type": "Story" },
+      { "date": "2025-05-22", "reference": "Exodus 10", "echo_type": "Story" },
+      { "date": "2025-05-23", "reference": "Psalm 105", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "Passover & Freedom",
+    "readings": [
+      { "date": "2025-05-24", "reference": "Exodus 11", "echo_type": "Story" },
+      { "date": "2025-05-25", "reference": "Exodus 12", "echo_type": "Story" },
+      { "date": "2025-05-26", "reference": "Luke 22", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "4. Deliverance & Water",
+    "theme": "Exodus & Song",
+    "readings": [
+      { "date": "2025-05-27", "reference": "Exodus 13", "echo_type": "Story" },
+      { "date": "2025-05-28", "reference": "Exodus 14", "echo_type": "Story" },
+      { "date": "2025-05-29", "reference": "Exodus 15", "echo_type": "Reflection" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "Testing in the Wilderness",
+    "readings": [
+      { "date": "2025-05-30", "reference": "Exodus 16", "echo_type": "Story" },
+      { "date": "2025-05-31", "reference": "Exodus 17", "echo_type": "Story" },
+      { "date": "2025-06-01", "reference": "John 6", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "A Holy People",
+    "readings": [
+      { "date": "2025-06-02", "reference": "Exodus 18", "echo_type": "Story" },
+      { "date": "2025-06-03", "reference": "Exodus 19", "echo_type": "Story" },
+      { "date": "2025-06-04", "reference": "1 Peter 2", "echo_type": "Instruction" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "The Law Given",
+    "readings": [
+      { "date": "2025-06-05", "reference": "Exodus 20", "echo_type": "Instruction" },
+      { "date": "2025-06-06", "reference": "Exodus 21", "echo_type": "Instruction" },
+      { "date": "2025-06-07", "reference": "Matthew 5", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "8. Cross & Covenant Renewal",
+    "theme": "Sin & Substitution",
+    "readings": [
+      { "date": "2025-09-18", "reference": "Leviticus 1", "echo_type": "Instruction" },
+      { "date": "2025-09-19", "reference": "Leviticus 2", "echo_type": "Instruction" },
+      { "date": "2025-09-20", "reference": "Hebrews 9", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "8. Cross & Covenant Renewal",
+    "theme": "Priesthood & Holiness",
+    "readings": [
+      { "date": "2025-09-21", "reference": "Leviticus 3", "echo_type": "Instruction" },
+      { "date": "2025-09-22", "reference": "Leviticus 4", "echo_type": "Instruction" },
+      { "date": "2025-09-23", "reference": "1 Peter 2", "echo_type": "Application" }
+    ]
+  },
+  {
+    "theme_bucket": "8. Cross & Covenant Renewal",
+    "theme": "Day of Atonement",
+    "readings": [
+      { "date": "2025-09-24", "reference": "Leviticus 16", "echo_type": "Instruction" },
+      { "date": "2025-09-25", "reference": "Leviticus 17", "echo_type": "Instruction" },
+      { "date": "2025-09-26", "reference": "Hebrews 10", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "Holiness in Life",
+    "readings": [
+      { "date": "2025-09-27", "reference": "Leviticus 18", "echo_type": "Instruction" },
+      { "date": "2025-09-28", "reference": "Leviticus 19", "echo_type": "Instruction" },
+      { "date": "2025-09-29", "reference": "Matthew 22", "echo_type": "Instruction" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "Justice & Neighbor Love",
+    "readings": [
+      { "date": "2025-09-30", "reference": "Leviticus 20", "echo_type": "Instruction" },
+      { "date": "2025-10-01", "reference": "Leviticus 21", "echo_type": "Instruction" },
+      { "date": "2025-10-02", "reference": "Luke 10", "echo_type": "Illustration" }
+    ]
+  },
+  {
+    "theme_bucket": "5. Law & Kingdom",
+    "theme": "Feasts & Rhythm",
+    "readings": [
+      { "date": "2025-10-03", "reference": "Leviticus 22", "echo_type": "Instruction" },
+      { "date": "2025-10-04", "reference": "Leviticus 23", "echo_type": "Instruction" },
+      { "date": "2025-10-05", "reference": "John 7", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "12. New Creation & Glory",
+    "theme": "All Things Made New",
+    "readings": [
+      { "date": "2026-11-26", "reference": "Revelation 19", "echo_type": "Fulfillment" },
+      { "date": "2026-11-27", "reference": "Revelation 20", "echo_type": "Fulfillment" },
+      { "date": "2026-11-28", "reference": "Revelation 21", "echo_type": "Fulfillment" },
+      { "date": "2026-11-29", "reference": "Revelation 22", "echo_type": "Fulfillment" }
+    ]
+  },
+  {
+    "theme_bucket": "6. Worship & Presence",
+    "theme": "Wisdom & Perspective",
+    "readings": [
+      { "date": "2026-11-30", "reference": "Ecclesiastes 11", "echo_type": "Wisdom" },
+      { "date": "2026-12-01", "reference": "Ecclesiastes 12", "echo_type": "Wisdom" }
+    ]
+  }
+]

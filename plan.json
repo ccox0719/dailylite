@@ -1,0 +1,452 @@
+[
+  { "day": 1, "reference": "Isaiah 11", "theme": "The Branch From Jesse" },
+  { "day": 2, "reference": "John 15", "theme": "The Branch From Jesse" },
+
+  { "day": 3, "reference": "Isaiah 61", "theme": "The Spirit of the Lord" },
+  { "day": 4, "reference": "Luke 4", "theme": "The Spirit of the Lord" },
+  { "day": 5, "reference": "Psalm 146", "theme": "The Spirit of the Lord" },
+
+  { "day": 6, "reference": "Isaiah 42", "theme": "The Servant Upheld" },
+  { "day": 7, "reference": "Matthew 12", "theme": "The Servant Upheld" },
+
+  { "day": 8, "reference": "Isaiah 53", "theme": "The Suffering Servant" },
+  { "day": 9, "reference": "John 19", "theme": "The Suffering Servant" },
+  { "day": 10, "reference": "Philippians 2", "theme": "The Suffering Servant" },
+
+  { "day": 11, "reference": "Zechariah 12", "theme": "Pierced for Our Transgressions" },
+  { "day": 12, "reference": "John 19", "theme": "Pierced for Our Transgressions" },
+
+  { "day": 13, "reference": "Exodus 12", "theme": "The True Passover Lamb" },
+  { "day": 14, "reference": "Luke 22", "theme": "The True Passover Lamb" },
+  { "day": 15, "reference": "Hebrews 9", "theme": "The True Passover Lamb" },
+
+  { "day": 16, "reference": "Ezekiel 37", "theme": "Dry Bones and New Life" },
+  { "day": 17, "reference": "John 11", "theme": "Dry Bones and New Life" },
+  { "day": 18, "reference": "1 Corinthians 15", "theme": "Dry Bones and New Life" },
+
+  { "day": 19, "reference": "Ezekiel 36", "theme": "A New Heart and a New Spirit" },
+  { "day": 20, "reference": "John 3", "theme": "A New Heart and a New Spirit" },
+  { "day": 21, "reference": "Romans 8", "theme": "A New Heart and a New Spirit" },
+
+  { "day": 22, "reference": "Joel 2", "theme": "The Valley of Decision" },
+  { "day": 23, "reference": "Acts 2", "theme": "The Valley of Decision" },
+
+  { "day": 24, "reference": "Isaiah 6", "theme": "Here Am I, Send Me" },
+  { "day": 25, "reference": "Acts 9", "theme": "Here Am I, Send Me" },
+
+  { "day": 26, "reference": "Matthew 28", "theme": "The Great Commission" },
+  { "day": 27, "reference": "Acts 1", "theme": "The Great Commission" },
+
+  { "day": 28, "reference": "Romans 12", "theme": "Life in the Spirit" },
+  { "day": 29, "reference": "Galatians 5", "theme": "Life in the Spirit" },
+
+  { "day": 30, "reference": "Ephesians 2", "theme": "The Household of God" },
+  { "day": 31, "reference": "1 Peter 2", "theme": "The Household of God" },
+
+  { "day": 32, "reference": "Daniel 6", "theme": "Faith Under Fire" },
+  { "day": 33, "reference": "James 1", "theme": "Faith Under Fire" },
+  { "day": 34, "reference": "Hebrews 12", "theme": "Faith Under Fire" },
+
+  { "day": 35, "reference": "Habakkuk 2", "theme": "The Righteous Shall Live by Faith" },
+  { "day": 36, "reference": "Romans 1", "theme": "The Righteous Shall Live by Faith" },
+
+  { "day": 37, "reference": "1 Samuel 30", "theme": "Blessed Endurance" },
+  { "day": 38, "reference": "2 Corinthians 4", "theme": "Blessed Endurance" },
+
+  { "day": 39, "reference": "Isaiah 40", "theme": "Comfort My People" },
+  { "day": 40, "reference": "2 Corinthians 1", "theme": "Comfort My People" },
+  { "day": 41, "reference": "Psalm 46", "theme": "Comfort My People" },
+
+  { "day": 42, "reference": "Isaiah 65", "theme": "A New Heaven and New Earth" },
+  { "day": 43, "reference": "Revelation 21", "theme": "A New Heaven and New Earth" },
+
+  { "day": 44, "reference": "Ezekiel 47", "theme": "The River of Life" },
+  { "day": 45, "reference": "Revelation 22", "theme": "The River of Life" },
+
+  { "day": 46, "reference": "Psalm 93", "theme": "The Lord Reigns" },
+  { "day": 47, "reference": "Revelation 1", "theme": "The Lord Reigns" },
+
+  { "day": 48, "reference": "Deuteronomy 6", "theme": "The Heart of the Law" },
+  { "day": 49, "reference": "Matthew 5", "theme": "The Heart of the Law" },
+
+  { "day": 50, "reference": "Deuteronomy 30", "theme": "Choose Life" },
+  { "day": 51, "reference": "John 10", "theme": "Choose Life" },
+
+  { "day": 52, "reference": "1 Samuel 16", "theme": "The True King" },
+  { "day": 53, "reference": "Luke 1", "theme": "The True King" },
+  { "day": 54, "reference": "Psalm 2", "theme": "The True King" },
+
+  { "day": 55, "reference": "Exodus 33", "theme": "Show Me Your Glory" },
+  { "day": 56, "reference": "John 17", "theme": "Show Me Your Glory" },
+  { "day": 57, "reference": "2 Corinthians 3", "theme": "Show Me Your Glory" },
+
+  { "day": 58, "reference": "Exodus 40", "theme": "God With Us" },
+  { "day": 59, "reference": "John 1", "theme": "God With Us" },
+
+  { "day": 60, "reference": "Psalm 96", "theme": "Worship in Spirit and Truth" },
+  { "day": 61, "reference": "John 4", "theme": "Worship in Spirit and Truth" },
+
+  { "day": 62, "reference": "Isaiah 56", "theme": "The House of Prayer" },
+  { "day": 63, "reference": "Matthew 21", "theme": "The House of Prayer" },
+
+  { "day": 64, "reference": "Joshua 3", "theme": "Through the Waters" },
+  { "day": 65, "reference": "Mark 4", "theme": "Through the Waters" },
+
+  { "day": 66, "reference": "Joshua 5", "theme": "The Captain of the Lord's Army" },
+  { "day": 67, "reference": "Revelation 19", "theme": "The Captain of the Lord's Army" },
+
+  { "day": 68, "reference": "Exodus 14", "theme": "Saved by Grace" },
+  { "day": 69, "reference": "Romans 6", "theme": "Saved by Grace" },
+
+  { "day": 70, "reference": "Genesis 15", "theme": "The Promise to Abraham" },
+  { "day": 71, "reference": "Romans 4", "theme": "The Promise to Abraham" },
+  { "day": 72, "reference": "Galatians 3", "theme": "The Promise to Abraham" },
+
+  { "day": 73, "reference": "Genesis 17", "theme": "Walk Before Me" },
+  { "day": 74, "reference": "Colossians 2", "theme": "Walk Before Me" },
+
+  { "day": 75, "reference": "Habakkuk 2", "theme": "Faith Counted as Righteousness" },
+  { "day": 76, "reference": "Hebrews 11", "theme": "Faith Counted as Righteousness" },
+
+  { "day": 77, "reference": "Ecclesiastes 1", "theme": "The Human Condition" },
+  { "day": 78, "reference": "Romans 3", "theme": "The Human Condition" },
+
+  { "day": 79, "reference": "Genesis 4", "theme": "The Deceitfulness of Sin" },
+  { "day": 80, "reference": "Hebrews 3", "theme": "The Deceitfulness of Sin" },
+
+  { "day": 81, "reference": "Psalm 130", "theme": "The Cry for Redemption" },
+  { "day": 82, "reference": "Luke 18", "theme": "The Cry for Redemption" },
+
+  { "day": 83, "reference": "Genesis 1", "theme": "In the Beginning" },
+  { "day": 84, "reference": "John 1", "theme": "In the Beginning" },
+
+  { "day": 85, "reference": "Genesis 2", "theme": "The Image of God" },
+  { "day": 86, "reference": "Psalm 8", "theme": "The Image of God" },
+  { "day": 87, "reference": "Hebrews 2", "theme": "The Image of God" },
+
+  { "day": 88, "reference": "Psalm 33", "theme": "The Sovereign Creator" },
+  { "day": 89, "reference": "Colossians 1", "theme": "The Sovereign Creator" },
+
+  { "day": 90, "reference": "Genesis 3", "theme": "The Fall and the Promise" },
+  { "day": 91, "reference": "Romans 5", "theme": "The Fall and the Promise" },
+  { "day": 92, "reference": "1 Corinthians 15", "theme": "The Fall and the Promise" },
+
+  { "day": 93, "reference": "Genesis 6", "theme": "Judgment and Mercy" },
+  { "day": 94, "reference": "1 Peter 3", "theme": "Judgment and Mercy" },
+
+  { "day": 95, "reference": "Genesis 7", "theme": "The Waters of Judgment" },
+  { "day": 96, "reference": "Matthew 24", "theme": "The Waters of Judgment" },
+
+  { "day": 97, "reference": "Genesis 8", "theme": "New Creation Begins" },
+  { "day": 98, "reference": "2 Corinthians 5", "theme": "New Creation Begins" },
+
+  { "day": 99, "reference": "Genesis 9", "theme": "The Covenant of Peace" },
+  { "day": 100, "reference": "Hebrews 6", "theme": "The Covenant of Peace" },
+
+  { "day": 101, "reference": "Psalm 24", "theme": "The King of Glory" },
+
+  { "day": 102, "reference": "Genesis 12", "theme": "The Call of Abraham" },
+  { "day": 103, "reference": "Galatians 3", "theme": "The Call of Abraham" },
+
+  { "day": 104, "reference": "Genesis 15", "theme": "Righteous by Faith" },
+  { "day": 105, "reference": "Romans 4", "theme": "Righteous by Faith" },
+
+  { "day": 106, "reference": "Genesis 17", "theme": "The Everlasting Covenant" },
+  { "day": 107, "reference": "Colossians 2", "theme": "The Everlasting Covenant" },
+
+  { "day": 108, "reference": "Genesis 22", "theme": "God Provides the Lamb" },
+  { "day": 109, "reference": "John 3", "theme": "God Provides the Lamb" },
+  { "day": 110, "reference": "Romans 8", "theme": "God Provides the Lamb" },
+
+  { "day": 111, "reference": "Psalm 16", "theme": "My Refuge and Portion" },
+
+  { "day": 112, "reference": "Exodus 3", "theme": "The God Who Sees and Sends" },
+  { "day": 113, "reference": "Acts 7", "theme": "The God Who Sees and Sends" },
+
+  { "day": 114, "reference": "Exodus 12", "theme": "The Passover" },
+  { "day": 115, "reference": "Luke 22", "theme": "The Passover" },
+
+  { "day": 116, "reference": "Exodus 14", "theme": "Deliverance Through the Sea" },
+  { "day": 117, "reference": "Romans 6", "theme": "Deliverance Through the Sea" },
+  { "day": 118, "reference": "1 Corinthians 10", "theme": "Deliverance Through the Sea" },
+
+  { "day": 119, "reference": "Psalm 77", "theme": "Your Way Through the Waters" },
+
+  { "day": 120, "reference": "Exodus 19", "theme": "A Kingdom of Priests" },
+  { "day": 121, "reference": "1 Peter 2", "theme": "A Kingdom of Priests" },
+
+  { "day": 122, "reference": "Exodus 20", "theme": "The Law and the Heart" },
+  { "day": 123, "reference": "Matthew 5", "theme": "The Law and the Heart" },
+
+  { "day": 124, "reference": "Exodus 33", "theme": "Show Me Your Glory" },
+  { "day": 125, "reference": "John 17", "theme": "Show Me Your Glory" },
+  { "day": 126, "reference": "2 Corinthians 3", "theme": "Show Me Your Glory" },
+
+  { "day": 127, "reference": "Psalm 84", "theme": "Your Presence Is My Joy" },
+
+  { "day": 128, "reference": "Joshua 1", "theme": "Be Strong and Courageous" },
+  { "day": 129, "reference": "Hebrews 13", "theme": "Be Strong and Courageous" },
+
+  { "day": 130, "reference": "Joshua 3", "theme": "Crossing Into Promise" },
+  { "day": 131, "reference": "Mark 4", "theme": "Crossing Into Promise" },
+
+  { "day": 132, "reference": "Joshua 5", "theme": "The Lord of Hosts" },
+  { "day": 133, "reference": "Revelation 19", "theme": "The Lord of Hosts" },
+
+  { "day": 134, "reference": "Judges 6", "theme": "The Lord Is Peace" },
+  { "day": 135, "reference": "Ephesians 6", "theme": "The Lord Is Peace" },
+
+  { "day": 136, "reference": "Judges 7", "theme": "Strength Made Perfect in Weakness" },
+  { "day": 137, "reference": "2 Corinthians 12", "theme": "Strength Made Perfect in Weakness" },
+
+  { "day": 138, "reference": "Psalm 20", "theme": "Some Trust in Chariots" },
+
+  { "day": 139, "reference": "Ruth 1", "theme": "From Bitterness to Hope" },
+  { "day": 140, "reference": "Matthew 1", "theme": "From Bitterness to Hope" },
+
+  { "day": 141, "reference": "1 Samuel 3", "theme": "Speak, Lord, Your Servant Is Listening" },
+  { "day": 142, "reference": "John 10", "theme": "Speak, Lord, Your Servant Is Listening" },
+
+  { "day": 143, "reference": "1 Samuel 16", "theme": "The Lord Looks at the Heart" },
+  { "day": 144, "reference": "Luke 1", "theme": "The Lord Looks at the Heart" },
+  { "day": 145, "reference": "Psalm 2", "theme": "The Lord Looks at the Heart" },
+
+  { "day": 146, "reference": "1 Samuel 17", "theme": "The Battle Is the Lord’s" },
+  { "day": 147, "reference": "Ephesians 6", "theme": "The Battle Is the Lord’s" },
+
+  { "day": 148, "reference": "1 Samuel 30", "theme": "Strengthened in the Lord" },
+  { "day": 149, "reference": "2 Corinthians 4", "theme": "Strengthened in the Lord" },
+
+  { "day": 150, "reference": "Psalm 18", "theme": "The Lord Is My Rock" },
+
+  { "day": 151, "reference": "2 Samuel 7", "theme": "The Everlasting Throne" },
+  { "day": 152, "reference": "Luke 1", "theme": "The Everlasting Throne" },
+
+  { "day": 153, "reference": "2 Samuel 22", "theme": "The Lord Is My Deliverer" },
+  { "day": 154, "reference": "Hebrews 2", "theme": "The Lord Is My Deliverer" },
+
+  { "day": 155, "reference": "1 Kings 3", "theme": "Give Me Wisdom" },
+  { "day": 156, "reference": "James 1", "theme": "Give Me Wisdom" },
+
+  { "day": 157, "reference": "1 Kings 8", "theme": "A House for the Name" },
+  { "day": 158, "reference": "John 2", "theme": "A House for the Name" },
+
+  { "day": 159, "reference": "Psalm 122", "theme": "Blessed to Worship" },
+
+  { "day": 160, "reference": "1 Kings 18", "theme": "The Lord, He Is God" },
+  { "day": 161, "reference": "Matthew 17", "theme": "The Lord, He Is God" },
+
+  { "day": 162, "reference": "1 Kings 19", "theme": "The Gentle Whisper" },
+  { "day": 163, "reference": "Matthew 11", "theme": "The Gentle Whisper" },
+
+  { "day": 164, "reference": "2 Kings 2", "theme": "Passing the Mantle" },
+  { "day": 165, "reference": "John 14", "theme": "Passing the Mantle" },
+
+  { "day": 166, "reference": "2 Kings 5", "theme": "Washed and Made Clean" },
+  { "day": 167, "reference": "Mark 1", "theme": "Washed and Made Clean" },
+
+  { "day": 168, "reference": "Psalm 51", "theme": "Create in Me a Clean Heart" },
+
+  { "day": 169, "reference": "Isaiah 1", "theme": "Come Let Us Reason Together" },
+  { "day": 170, "reference": "1 John 1", "theme": "Come Let Us Reason Together" },
+
+  { "day": 171, "reference": "Isaiah 9", "theme": "Light in Darkness" },
+  { "day": 172, "reference": "Luke 2", "theme": "Light in Darkness" },
+
+  { "day": 173, "reference": "Isaiah 11", "theme": "A New World Under the Messiah" },
+  { "day": 174, "reference": "Revelation 5", "theme": "A New World Under the Messiah" },
+
+  { "day": 175, "reference": "Isaiah 40", "theme": "Strength for the Weary" },
+  { "day": 176, "reference": "Matthew 11", "theme": "Strength for the Weary" },
+
+  { "day": 177, "reference": "Psalm 103", "theme": "Bless the Lord, O My Soul" },
+
+  { "day": 178, "reference": "Jeremiah 31", "theme": "The New Covenant" },
+  { "day": 179, "reference": "Hebrews 8", "theme": "The New Covenant" },
+
+  { "day": 180, "reference": "Jeremiah 33", "theme": "The Righteous Branch" },
+  { "day": 181, "reference": "Acts 13", "theme": "The Righteous Branch" },
+
+  { "day": 182, "reference": "Ezekiel 34", "theme": "The Shepherd of Israel" },
+  { "day": 183, "reference": "John 10", "theme": "The Shepherd of Israel" },
+
+  { "day": 184, "reference": "Ezekiel 36", "theme": "A Heart of Flesh" },
+  { "day": 185, "reference": "Titus 3", "theme": "A Heart of Flesh" },
+
+  { "day": 186, "reference": "Psalm 139", "theme": "Known by God" },
+
+  { "day": 187, "reference": "Daniel 2", "theme": "The Kingdom That Cannot Be Shaken" },
+  { "day": 188, "reference": "Hebrews 12", "theme": "The Kingdom That Cannot Be Shaken" },
+
+  { "day": 189, "reference": "Daniel 7", "theme": "The Son of Man Reigns" },
+  { "day": 190, "reference": "Revelation 1", "theme": "The Son of Man Reigns" },
+
+  { "day": 191, "reference": "Hosea 11", "theme": "Loved with an Everlasting Love" },
+  { "day": 192, "reference": "Matthew 2", "theme": "Loved with an Everlasting Love" },
+
+  { "day": 193, "reference": "Hosea 14", "theme": "Return to Me" },
+  { "day": 194, "reference": "Luke 15", "theme": "Return to Me" },
+
+  { "day": 195, "reference": "Joel 3", "theme": "The Lord Roars from Zion" },
+  { "day": 196, "reference": "Revelation 14", "theme": "The Lord Roars from Zion" },
+
+  { "day": 197, "reference": "Amos 5", "theme": "Seek Justice" },
+  { "day": 198, "reference": "James 2", "theme": "Seek Justice" },
+
+  { "day": 199, "reference": "Obadiah 1", "theme": "The Day of the Lord" },
+  { "day": 200, "reference": "2 Peter 3", "theme": "The Day of the Lord" },
+
+  { "day": 201, "reference": "Jonah 1", "theme": "A Prophet Runs" },
+  { "day": 202, "reference": "Matthew 12", "theme": "A Prophet Runs" },
+
+  { "day": 203, "reference": "Jonah 2", "theme": "Three Days in the Deep" },
+  { "day": 204, "reference": "Matthew 12", "theme": "Three Days in the Deep" },
+
+  { "day": 205, "reference": "Micah 5", "theme": "The Ruler from Bethlehem" },
+  { "day": 206, "reference": "Matthew 2", "theme": "The Ruler from Bethlehem" },
+
+  { "day": 207, "reference": "Nahum 1", "theme": "The Lord Is a Stronghold" },
+  { "day": 208, "reference": "Psalm 46", "theme": "The Lord Is a Stronghold" },
+
+  { "day": 209, "reference": "Habakkuk 3", "theme": "Yet I Will Rejoice" },
+  { "day": 210, "reference": "Philippians 4", "theme": "Yet I Will Rejoice" },
+
+  { "day": 211, "reference": "Zephaniah 1", "theme": "The Day of the Lord Is Near" },
+  { "day": 212, "reference": "1 Thessalonians 5", "theme": "The Day of the Lord Is Near" },
+  { "day": 213, "reference": "Zephaniah 3", "theme": "He Will Rejoice over You" },
+  { "day": 214, "reference": "Luke 15", "theme": "He Will Rejoice over You" },
+
+  { "day": 215, "reference": "Haggai 1", "theme": "Consider Your Ways" },
+  { "day": 216, "reference": "Matthew 6", "theme": "Consider Your Ways" },
+  { "day": 217, "reference": "Haggai 2", "theme": "Greater Glory Is Coming" },
+  { "day": 218, "reference": "Hebrews 12", "theme": "Greater Glory Is Coming" },
+
+  { "day": 219, "reference": "Zechariah 9", "theme": "Your King Comes Humble" },
+  { "day": 220, "reference": "Matthew 21", "theme": "Your King Comes Humble" },
+  { "day": 221, "reference": "Psalm 118", "theme": "Your King Comes Humble" },
+
+  { "day": 222, "reference": "Zechariah 12", "theme": "They Will Look on Him" },
+  { "day": 223, "reference": "John 19", "theme": "They Will Look on Him" },
+
+  { "day": 224, "reference": "Malachi 1", "theme": "Where Is My Honor?" },
+  { "day": 225, "reference": "Romans 12", "theme": "Where Is My Honor?" },
+  { "day": 226, "reference": "Malachi 3", "theme": "The Refiner and the Messenger" },
+  { "day": 227, "reference": "1 Peter 1", "theme": "The Refiner and the Messenger" },
+
+  { "day": 228, "reference": "Malachi 4", "theme": "The Sun of Righteousness" },
+  { "day": 229, "reference": "Luke 1", "theme": "The Sun of Righteousness" },
+
+  { "day": 230, "reference": "Matthew 1", "theme": "God with Us" },
+  { "day": 231, "reference": "Isaiah 7", "theme": "God with Us" },
+  { "day": 232, "reference": "John 1", "theme": "The Word Became Flesh" },
+  { "day": 233, "reference": "Colossians 1", "theme": "The Word Became Flesh" },
+
+  { "day": 234, "reference": "Luke 3", "theme": "Prepare the Way" },
+  { "day": 235, "reference": "Isaiah 40", "theme": "Prepare the Way" },
+
+  { "day": 236, "reference": "Matthew 4", "theme": "Tempted Yet Without Sin" },
+  { "day": 237, "reference": "Hebrews 4", "theme": "Tempted Yet Without Sin" },
+
+  { "day": 238, "reference": "Luke 4", "theme": "Good News to the Poor" },
+  { "day": 239, "reference": "Isaiah 61", "theme": "Good News to the Poor" },
+
+  { "day": 240, "reference": "Mark 1", "theme": "Follow Me" },
+  { "day": 241, "reference": "Luke 5", "theme": "Follow Me" },
+  { "day": 242, "reference": "John 4", "theme": "Living Water" },
+  { "day": 243, "reference": "John 7", "theme": "Living Water" },
+
+  { "day": 244, "reference": "Matthew 5", "theme": "Blessed Are the Poor in Spirit" },
+  { "day": 245, "reference": "Luke 6", "theme": "Blessed Are the Poor in Spirit" },
+  { "day": 246, "reference": "James 2", "theme": "Faith That Acts" },
+  { "day": 247, "reference": "Micah 6", "theme": "Faith That Acts" },
+
+  { "day": 248, "reference": "Matthew 13", "theme": "The Mystery of the Kingdom" },
+  { "day": 249, "reference": "Mark 4", "theme": "The Mystery of the Kingdom" },
+  { "day": 250, "reference": "Luke 8", "theme": "The Mystery of the Kingdom" },
+
+  { "day": 251, "reference": "Matthew 8", "theme": "Authority over Storms" },
+  { "day": 252, "reference": "Mark 5", "theme": "Authority over Darkness" },
+  { "day": 253, "reference": "Luke 7", "theme": "Faith That Marvels" },
+
+  { "day": 254, "reference": "John 6", "theme": "The Bread of Life" },
+  { "day": 255, "reference": "Exodus 16", "theme": "The Bread of Life" },
+
+  { "day": 256, "reference": "Matthew 14", "theme": "He Walks on the Sea" },
+  { "day": 257, "reference": "Psalm 77", "theme": "He Walks on the Sea" },
+
+  { "day": 258, "reference": "John 10", "theme": "The Good Shepherd" },
+  { "day": 259, "reference": "Psalm 23", "theme": "The Good Shepherd" },
+
+  { "day": 260, "reference": "Luke 10", "theme": "Sent Two by Two" },
+  { "day": 261, "reference": "Acts 13", "theme": "Sent Two by Two" },
+
+  { "day": 262, "reference": "Luke 15", "theme": "Lost and Found" },
+  { "day": 263, "reference": "Ephesians 2", "theme": "Lost and Found" },
+
+  { "day": 264, "reference": "John 11", "theme": "I Am the Resurrection" },
+  { "day": 265, "reference": "1 Thessalonians 4", "theme": "I Am the Resurrection" },
+
+  { "day": 266, "reference": "Matthew 21", "theme": "King on a Donkey" },
+  { "day": 267, "reference": "Psalm 24", "theme": "King on a Donkey" },
+
+  { "day": 268, "reference": "Matthew 26", "theme": "In the Garden" },
+  { "day": 269, "reference": "Hebrews 5", "theme": "In the Garden" },
+
+  { "day": 270, "reference": "Matthew 27", "theme": "Crucified for Us" },
+  { "day": 271, "reference": "Isaiah 53", "theme": "Crucified for Us" },
+
+  { "day": 272, "reference": "Luke 23", "theme": "Father, Forgive Them" },
+  { "day": 273, "reference": "Colossians 2", "theme": "Father, Forgive Them" },
+
+  { "day": 274, "reference": "John 19", "theme": "It Is Finished" },
+  { "day": 275, "reference": "Hebrews 9", "theme": "It Is Finished" },
+
+  { "day": 276, "reference": "Matthew 28", "theme": "He Is Risen" },
+  { "day": 277, "reference": "Luke 24", "theme": "He Is Risen" },
+  { "day": 278, "reference": "John 20", "theme": "Blessed Are Those Who Have Not Seen" },
+  { "day": 279, "reference": "1 Corinthians 15", "theme": "Blessed Are Those Who Have Not Seen" },
+
+  { "day": 280, "reference": "Acts 1", "theme": "You Will Be My Witnesses" },
+  { "day": 281, "reference": "Acts 2", "theme": "You Will Be My Witnesses" },
+  { "day": 282, "reference": "Acts 4", "theme": "Boldness in His Name" },
+  { "day": 283, "reference": "Acts 10", "theme": "No Partiality" },
+
+  { "day": 284, "reference": "Acts 16", "theme": "Songs in the Night" },
+  { "day": 285, "reference": "Philippians 1", "theme": "Songs in the Night" },
+
+  { "day": 286, "reference": "Romans 5", "theme": "Peace with God" },
+  { "day": 287, "reference": "Romans 8", "theme": "No Condemnation" },
+
+  { "day": 288, "reference": "Galatians 2", "theme": "Crucified with Christ" },
+  { "day": 289, "reference": "Galatians 5", "theme": "Walk by the Spirit" },
+
+  { "day": 290, "reference": "Ephesians 1", "theme": "Every Spiritual Blessing" },
+  { "day": 291, "reference": "Ephesians 3", "theme": "Rooted and Grounded in Love" },
+
+  { "day": 292, "reference": "Colossians 3", "theme": "Set Your Mind Above" },
+  { "day": 293, "reference": "Colossians 4", "theme": "Set Your Mind Above" },
+
+  { "day": 294, "reference": "1 Thessalonians 1", "theme": "Turned from Idols" },
+  { "day": 295, "reference": "1 Thessalonians 5", "theme": "Children of the Day" },
+
+  { "day": 296, "reference": "2 Timothy 2", "theme": "Be Strong in Grace" },
+  { "day": 297, "reference": "2 Timothy 4", "theme": "Finish the Race" },
+
+  { "day": 298, "reference": "Hebrews 10", "theme": "Let Us Draw Near" },
+  { "day": 299, "reference": "Hebrews 12", "theme": "Run with Endurance" },
+
+  { "day": 300, "reference": "James 1", "theme": "Count It All Joy" },
+  { "day": 301, "reference": "James 3", "theme": "Wisdom from Above" },
+
+  { "day": 302, "reference": "1 Peter 1", "theme": "Tested Faith" },
+  { "day": 303, "reference": "1 Peter 5", "theme": "Shepherd the Flock" },
+
+  { "day": 304, "reference": "1 John 1", "theme": "Walk in the Light" },
+  { "day": 305, "reference": "1 John 4", "theme": "Perfect Love Casts Out Fear" },
+
+  { "day": 306, "reference": "Revelation 1", "theme": "The Son of Man Among the Lampstands" },
+  { "day": 307, "reference": "Revelation 5", "theme": "The Lamb Worthy to Open the Scroll" },
+  { "day": 308, "reference": "Revelation 7", "theme": "A Multitude No One Can Number" },
+  { "day": 309, "reference": "Revelation 21", "theme": "Behold, I Am Making All Things New" },
+  { "day": 310, "reference": "Revelation 22", "theme": "Come, Lord Jesus" }
+]

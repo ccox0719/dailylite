@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Daily Devotional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon-180.png" />
+  <meta name="theme-color" content="#b8873b" />
+</head>
+<body>
+  <div class="app">
+    <header class="top-bar">
+      <div class="top-left">
+        <i class="bi bi-fire logo-icon" aria-hidden="true"></i>
+        <div class="title-stack">
+          <div class="app-name">Daily Light</div>
+          <div class="plan-name" id="planName">Devotional Reader</div>
+        </div>
+      </div>
+      <div class="top-right-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="icon-btn" id="uploadPlanBtn" aria-label="Upload plan">
+          <i class="bi bi-cloud-arrow-up"></i>
+        </button>
+        <button class="icon-btn" id="menuToggle" aria-label="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Slide-down menu for selecting / editing plans -->
+    <section class="menu-panel" id="menuPanel">
+      <div class="menu-section">
+        <label for="planSelect" class="menu-label">Active plan</label>
+        <select id="planSelect"></select>
+      </div>
+
+      <div class="menu-font-controls">
+        <button class="font-btn" data-font-size="0" type="button" aria-label="Small font">Aₛ</button>
+        <button class="font-btn" data-font-size="1" type="button" aria-label="Medium font">Aₘ</button>
+        <button class="font-btn" data-font-size="2" type="button" aria-label="Large font">Aₗ</button>
+        <button class="font-btn" id="fontFamilyToggle" type="button" aria-label="Toggle font family">Serif</button>
+      </div>
+
+      <button class="menu-btn" id="editPlanBtn">
+        <i class="bi bi-pencil-square" aria-hidden="true"></i>
+        Edit active plan (JSON)
+      </button>
+      <button class="menu-btn danger" id="deletePlanBtn">
+        <i class="bi bi-trash3" aria-hidden="true"></i>
+        Delete active plan
+      </button>
+      <button class="menu-btn subtle" id="resetSampleBtn">
+        <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
+        Reset to sample plan
+      </button>
+      <button class="menu-btn subtle" id="resetPlanProgressBtn">
+        <i class="bi bi-skip-backward" aria-hidden="true"></i>
+        Reset plan to Day 1
+      </button>
+      <button class="menu-btn subtle" id="setCurrentAsTodayBtn">
+        <i class="bi bi-calendar-check" aria-hidden="true"></i>
+        Set current entry as today
+      </button>
+
+      <button class="menu-btn subtle" id="refreshAppBtn">
+        <i class="bi bi-arrow-clockwise" aria-hidden="true"></i>
+        Check for updates (keeps plans)
+      </button>
+
+      <div class="plan-upload">
+        <span class="plan-upload-label">Upload a CSV or JSON plan file.</span>
+        <label class="plan-upload-btn" for="planFileUpload">
+          <i class="bi bi-file-earmark-arrow-up"></i>
+          Select file
+        </label>
+        <input type="file" id="planFileUpload" accept=".csv,.json" />
+      </div>
+
+      <div class="menu-section sample-download">
+        <a class="menu-btn subtle" href="sample.csv" download>
+          <i class="bi bi-download" aria-hidden="true"></i>
+          Download sample CSV
+        </a>
+        <p class="menu-help">
+          Grab this reference file if you need a starting point or want to see the expected format.
+        </p>
+      </div>
+
+      <p class="menu-help">
+        Plans are stored in your browser (localStorage).  
+        You can also paste JSON below once the CSV plan loads.
+      </p>
+    </section>
+
+    <!-- Simple JSON editor for the active plan -->
+    <section class="editor-panel" id="editorPanel">
+      <header class="editor-header">
+        <h2><i class="bi bi-pencil-square" aria-hidden="true"></i>Edit Active Plan</h2>
+        <button class="icon-btn" id="closeEditorBtn" aria-label="Close editor">✕</button>
+      </header>
+
+      <p class="editor-help">
+        You can paste or edit the JSON for this plan here.  
+        When you click “Save Plan JSON”, it updates the active plan in localStorage.
+      </p>
+
+      <textarea id="planJsonInput" class="editor-textarea" spellcheck="false"></textarea>
+
+      <div class="editor-actions">
+        <button id="savePlanJsonBtn" class="menu-btn">Save Plan JSON</button>
+      </div>
+      <pre class="editor-error" id="editorError"></pre>
+    </section>
+
+    <!-- Today’s reading -->
+    <main class="reading">
+      <div class="reading-meta">
+        <div id="readingDate" class="reading-date"></div>
+        <div id="readingRef" class="reading-ref"></div>
+      </div>
+
+      <div class="reading-progress">
+        <div class="progress-text">
+          <i class="bi bi-graph-up"></i>
+          <span id="progressLabel">Day 1 of 7</span>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+
+      <div class="reading-title-row">
+        <i class="bi bi-book reading-title-icon" aria-hidden="true"></i>
+        <h1 id="readingTitle" class="reading-title"></h1>
+      </div>
+
+      <section class="reading-body" id="readingBody"></section>
+
+      <section class="reading-bsb" id="readingBsb" hidden></section>
+
+      <section class="reading-extra reading-questions">
+        <i class="bi bi-chat-left-text" aria-hidden="true"></i>
+        <div class="extra-copy" id="readingQuestions"></div>
+      </section>
+      <section class="reading-extra reading-prayer">
+        <span class="svg-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M448 128C448 92.7 419.3 64 384 64C348.7 64 320 92.7 320 128C320 163.3 348.7 192 384 192C419.3 192 448 163.3 448 128zM328.7 328L351.6 359.5C358.1 368.4 367.9 374.2 378.8 375.6C389.7 377 400.7 373.9 409.2 366.9L497.2 294.9C514.3 280.9 516.8 255.7 502.8 238.6C488.8 221.5 463.6 219 446.5 233L391.3 278.2L365.1 242.2C349.5 220.7 324.5 208 297.9 208C267 208 238.7 225.1 224.3 252.4L175.8 344.9C155.6 383.4 166.4 430.8 201.4 456.7L254.6 496L168 496C145.9 496 128 513.9 128 536C128 558.1 145.9 576 168 576L376 576C393.3 576 408.6 564.9 414 548.5C419.4 532.1 413.7 514.1 399.8 503.8L283.7 418L328.7 328z"
+            />
+          </svg>
+        </span>
+        <div class="extra-copy" id="readingPrayer"></div>
+      </section>
+
+      <div class="reading-footer" id="readingFooter"></div>
+    </main>
+    <div class="fixed-nav">
+      <div class="reading-nav">
+        <button class="nav-btn" id="prevEntry" type="button" aria-label="Previous entry">
+          <span class="nav-icon nav-icon--prev" aria-hidden="true">←</span>
+          <span class="visually-hidden">Yesterday</span>
+        </button>
+        <button class="nav-btn" id="nextEntry" type="button" aria-label="Next entry">
+          <span class="nav-icon nav-icon--next" aria-hidden="true">→</span>
+          <span class="visually-hidden">Tomorrow</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
