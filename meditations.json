@@ -990,6 +990,82 @@
           "prayer": "Lord, help me speak to you from where I am today."
         }
       ]
+    },
+    "749": {
+      "title": "Walk Humbly",
+      "reference": "Micah 6:8b",
+      "context": "Micah 6:1–8",
+      "studyConnection": "Micah describes the Lord’s case against his people. After recalling how God rescued them, the passage asks what response God requires.",
+      "verseContext": "In response to questions about offerings, Micah names justice, faithfulness, and a humble walk with God.",
+      "phrases": [
+        {
+          "quote": "to act justly, to love faithfulness,",
+          "question": "Where could I be fairer to someone who depends on me to keep my word?",
+          "prayer": "Lord, help me do what’s fair and keep my word today."
+        },
+        {
+          "quote": "and to walk humbly with your God.",
+          "question": "Where am I most reluctant to admit I need God’s help?",
+          "prayer": "Lord, help me walk with you without pretending I can do it all myself."
+        }
+      ]
+    },
+    "756": {
+      "title": "Loved Like This",
+      "reference": "1 John 4:11",
+      "context": "1 John 4:7–12",
+      "studyConnection": "John tells believers to love one another and points to God sending his Son as the clearest picture of that love.",
+      "verseContext": "John’s phrase “in this way” points back to God sending his Son for our sins.",
+      "phrases": [
+        {
+          "quote": "Dear friends, if God loved us in this way,",
+          "question": "What does God sending his Son show me about how he loves me?",
+          "prayer": "Father, help me receive the love you showed me in Jesus."
+        },
+        {
+          "quote": "we also must love one another.",
+          "question": "Whose needs could I pay closer attention to because God has loved me?",
+          "prayer": "Jesus, help me give someone the care I’ve received from you."
+        }
+      ]
+    },
+    "763": {
+      "title": "Yet I Will Rejoice",
+      "reference": "Habakkuk 3:18",
+      "context": "Habakkuk 3:16–19",
+      "studyConnection": "Habakkuk trembles as he waits for trouble to come. He pictures crops and livestock failing, yet resolves to rejoice in God.",
+      "verseContext": "Habakkuk says “yet” after describing the loss of the food and animals his people depend on.",
+      "phrases": [
+        {
+          "quote": "yet I will celebrate in the Lord;",
+          "question": "What good about God can I still name while I wait on something hard?",
+          "prayer": "Lord, help me remember your goodness while I wait."
+        },
+        {
+          "quote": "I will rejoice in the God of my salvation!",
+          "question": "When a source of security fails, what helps me remember who can save me?",
+          "prayer": "God of my salvation, help me find joy in you when I feel afraid."
+        }
+      ]
+    },
+    "770": {
+      "title": "God Is Among You",
+      "reference": "Zephaniah 3:17a",
+      "context": "Zephaniah 3:14–17",
+      "studyConnection": "Zephaniah calls Jerusalem to rejoice because the Lord has removed her judgment and is among his people.",
+      "verseContext": "The prophet speaks to Zion after judgment. God’s presence gives his people a reason to stop fearing.",
+      "phrases": [
+        {
+          "quote": "The Lord your God is among you,",
+          "question": "When do I act as though God is far from what I’m facing?",
+          "prayer": "Lord, help me remember your nearness today."
+        },
+        {
+          "quote": "a warrior who saves.",
+          "question": "What have I been facing as though everything depended on my strength?",
+          "prayer": "Lord, help me trust your strength where my own falls short."
+        }
+      ]
     }
   }
 }
