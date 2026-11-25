@@ -314,9 +314,9 @@ button {
 }
 
 .reading-body::first-line {
-  font-variant-caps: all-small-caps;
-  letter-spacing: 0.05em;
-  font-size: 1.04em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.07em;
 }
 
 .reading-body p {
@@ -1084,46 +1084,45 @@ button {
 .jump-actions button[type="submit"] { background: var(--accent-soft); }
 
 /* ===========================================================
-   Weekly walk — left-aligned to match the rest of the page
+   Centered headings: section labels and Reflect / Pray
+   (Scripture and the devotional stay left-aligned for reading)
    =========================================================== */
-.meditation {
-  text-align: left;
+.section-label {
+  justify-content: center;
 }
 
-.meditation::before {
-  left: 0;
-  transform: none;
+.reading-extra {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.meditation-heading {
-  align-items: flex-start;
+.reading-extra .extra-copy {
+  text-align: center;
+  text-wrap: balance;
 }
 
-.meditation-source {
-  justify-content: flex-start;
+/* ===========================================================
+   Scripture — Bible-style drop cap when a chapter opens at verse 1
+   =========================================================== */
+.reading-bsb .verse-paragraph.chapter-opening > .verse:first-child > sup {
+  display: none;
 }
 
-#meditationVerseContext {
-  margin-left: 0;
-  margin-right: 0;
+.reading-bsb .verse-paragraph.chapter-opening::first-letter {
+  float: left;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.6em;
+  line-height: 0.82;
+  margin: 0.05em 0.06em 0 -0.02em;
+  color: var(--accent);
 }
 
-.meditation h1 {
-  text-align: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* Opening quote hangs in the margin so the words align with the text */
-.meditation h1::before {
-  margin-left: -0.36em;
-  margin-right: 0;
-}
-
-.meditation details[open] {
-  margin: 0;
-}
-
-.meditation details[open] summary {
-  justify-content: flex-start;
+/* First line in small caps, as in a printed Bible */
+.reading-bsb .verse-paragraph.chapter-opening::first-line {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.07em;
 }

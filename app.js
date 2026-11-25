@@ -461,8 +461,12 @@ function formatVersesHtml(chapterResult) {
   });
   if (current.length) paragraphs.push(current);
 
+  // Like a printed Bible, a chapter that opens at verse 1 starts with a large
+  // initial letter in place of the verse number.
+  const opensChapter = String(chapterResult.verses[0]?.number) === "1";
+
   const paragraphHtml = paragraphs
-    .map(group => {
+    .map((group, groupIndex) => {
       const verseHtml = group
         .map(v => {
           const escaped = v.text
@@ -472,7 +476,9 @@ function formatVersesHtml(chapterResult) {
           return `<span class="verse"><sup>${v.number}</sup><span class="verse-text">${escaped}</span></span>`;
         })
         .join(" ");
-      return `<div class="verse-paragraph">${verseHtml}</div>`;
+      const classes = ["verse-paragraph"];
+      if (groupIndex === 0 && opensChapter) classes.push("chapter-opening");
+      return `<div class="${classes.join(" ")}">${verseHtml}</div>`;
     })
     .join("");
 
