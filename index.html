@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Daily Devotional</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Light</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.png" />
   <link rel="apple-touch-icon" href="icon-180.png" />
-  <meta name="theme-color" content="#f5efe4" />
+  <meta name="theme-color" content="#f7f3ec" />
 </head>
 <body>
+  <!-- Hairline reading progress across the top of the screen -->
+  <div class="reading-progress" aria-hidden="true">
+    <div class="progress-track">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+  </div>
+
   <div class="app">
     <header class="top-bar">
       <div class="top-left">
@@ -94,7 +101,7 @@
       </div>
 
       <p class="menu-help">
-        Plans are stored in your browser (localStorage).  
+        Plans are stored in your browser (localStorage).
         You can also paste JSON below once the CSV plan loads.
       </p>
     </section>
@@ -107,7 +114,7 @@
       </header>
 
       <p class="editor-help">
-        You can paste or edit the JSON for this plan here.  
+        You can paste or edit the JSON for this plan here.
         When you click “Save Plan JSON”, it updates the active plan in localStorage.
       </p>
 
@@ -121,21 +128,19 @@
 
     <!-- Today’s reading -->
     <main class="reading">
-      <div class="reading-meta">
-        <div id="readingDate" class="reading-date"></div>
+      <header class="reading-head">
+        <div class="reading-eyebrow">
+          <span id="readingDate" class="reading-date"></span>
+          <span class="eyebrow-sep" aria-hidden="true">·</span>
+          <span id="progressLabel" class="reading-day"></span>
+        </div>
+
+        <div class="reading-title-row" id="readingTitleRow">
+          <h1 id="readingTitle" class="reading-title"></h1>
+        </div>
+
         <div id="readingRef" class="reading-ref"></div>
-      </div>
-
-      <div class="reading-progress">
-        <div class="progress-text">
-          <i class="bi bi-graph-up"></i>
-          <span id="progressLabel">Day 1 of 7</span>
-        </div>
-        <div class="progress-track">
-          <div id="progressBar" class="progress-bar"></div>
-        </div>
-      </div>
-
+      </header>
 
       <section class="meditation" id="meditation" aria-labelledby="meditationQuote" hidden>
         <div class="meditation-heading">
@@ -152,39 +157,25 @@
         </details>
       </section>
 
-      <div class="reading-title-row" id="readingTitleRow">
-        <i class="bi bi-book reading-title-icon" aria-hidden="true"></i>
-        <h1 id="readingTitle" class="reading-title"></h1>
-      </div>
-
       <section class="reading-body" id="readingBody"></section>
 
-      <section class="reading-bsb" id="readingBsb" hidden></section>
+      <div class="section-label scripture-label" aria-hidden="true">Scripture</div>
+      <section class="reading-bsb" id="readingBsb" aria-label="Scripture" hidden></section>
 
       <section class="reading-extra reading-questions" aria-label="Reflect">
-        <div class="extra-label">
-          <i class="bi bi-chat-left-text" aria-hidden="true"></i>
-          Reflect
-        </div>
+        <div class="section-label">Reflect</div>
         <div class="extra-copy" id="readingQuestions"></div>
       </section>
+
       <section class="reading-extra reading-prayer" aria-label="Pray">
-        <div class="extra-label">
-          <span class="svg-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-              <path
-                d="M448 128C448 92.7 419.3 64 384 64C348.7 64 320 92.7 320 128C320 163.3 348.7 192 384 192C419.3 192 448 163.3 448 128zM328.7 328L351.6 359.5C358.1 368.4 367.9 374.2 378.8 375.6C389.7 377 400.7 373.9 409.2 366.9L497.2 294.9C514.3 280.9 516.8 255.7 502.8 238.6C488.8 221.5 463.6 219 446.5 233L391.3 278.2L365.1 242.2C349.5 220.7 324.5 208 297.9 208C267 208 238.7 225.1 224.3 252.4L175.8 344.9C155.6 383.4 166.4 430.8 201.4 456.7L254.6 496L168 496C145.9 496 128 513.9 128 536C128 558.1 145.9 576 168 576L376 576C393.3 576 408.6 564.9 414 548.5C419.4 532.1 413.7 514.1 399.8 503.8L283.7 418L328.7 328z"
-              />
-            </svg>
-          </span>
-          Pray
-        </div>
+        <div class="section-label">Pray</div>
         <div class="extra-copy" id="readingPrayer"></div>
       </section>
 
-      <div class="reading-footer" id="readingFooter"></div>
+      <div class="reading-footer" id="readingFooter" hidden></div>
     </main>
-    <div class="fixed-nav">
+
+    <nav class="fixed-nav" aria-label="Entries">
       <div class="reading-nav">
         <button class="nav-btn" id="prevEntry" type="button" aria-label="Previous entry">
           <span class="nav-icon nav-icon--prev" aria-hidden="true">←</span>
@@ -195,7 +186,7 @@
           <span class="nav-icon nav-icon--next" aria-hidden="true">→</span>
         </button>
       </div>
-    </div>
+    </nav>
 
     <div id="toast" class="toast"></div>
   </div>

@@ -28,9 +28,9 @@ const DEFAULT_THEME_MODE = "light";
 const FONT_SIZE_STEPS = [14, 16, 18];
 const FONT_FAMILIES = [
   {
-    id: "playfair",
-    label: "Playfair",
-    stack: '"Playfair Display", "Source Sans 3", serif'
+    id: "literata",
+    label: "Literata",
+    stack: '"Literata", Georgia, "Times New Roman", serif'
   },
   {
     id: "georgia",
@@ -40,7 +40,12 @@ const FONT_FAMILIES = [
   {
     id: "merriweather",
     label: "Merriweather",
-    stack: '"Merriweather", "Source Sans 3", serif'
+    stack: '"Merriweather", Georgia, serif'
+  },
+  {
+    id: "playfair",
+    label: "Playfair",
+    stack: '"Playfair Display", Georgia, serif'
   }
 ];
 const LEGACY_DEFAULT_PLAN = {

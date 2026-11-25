@@ -1,68 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Playfair+Display:wght@500;600&family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=Playfair+Display:wght@500;600&family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap");
 
 /* ===========================================================
-   Daily Light — theme tokens
+   Daily Light — "printed page" design
+   Inspired by NeuBible (type-first, no chrome), Matter
+   (Literata on paper), Readwise (ideal measure), stoic.
+   (color used sparingly) and Kinfolk (editorial headline).
    =========================================================== */
 :root {
   /* Paper & ink */
-  --bg: #f5efe4;
-  --bg-glow: rgba(214, 168, 92, 0.22);
-  --card: #fffcf6;
-  --surface: #f8f1e4;
-  --text: #2b251e;
-  --muted: #877b6a;
-  --faint: #b3a690;
+  --bg: #f7f3ec;
+  --text: #1f1b16;
+  --muted: #7b7264;
+  --faint: #aea494;
+  --rule: rgba(31, 27, 22, 0.12);
+  --rule-strong: rgba(31, 27, 22, 0.22);
+  --surface: #efe9df;
+  --card: #fbf8f3;
 
-  /* Gold leaf */
+  /* A single warm accent, used sparingly */
   --accent: #a8742a;
-  --accent-strong: #8c5f1f;
   --accent-soft: rgba(168, 116, 42, 0.14);
-  --on-accent: #fffaf0;
 
-  --border: rgba(74, 56, 28, 0.12);
-  --border-strong: rgba(74, 56, 28, 0.2);
   --danger: #b4412f;
-  --extra-bg: rgba(168, 116, 42, 0.06);
-  --nav-bg: rgba(255, 252, 246, 0.94);
+  --nav-bg: rgba(247, 243, 236, 0.9);
 
-  /* Type (font size & family are overridden by app.js display settings) */
+  /* Type (size & family are overridden by app.js display settings) */
   --devotional-font-size: 16px;
-  --devotional-font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  --devotional-font-family: "Literata", Georgia, "Times New Roman", serif;
   --scripture-font-size: 18px;
-  --font-display: "Newsreader", "Playfair Display", Georgia, serif;
+  --font-head: "Literata", Georgia, "Times New Roman", serif;
   --font-ui: "Source Sans 3", "Inter", system-ui, -apple-system, sans-serif;
 
-  /* Shape & depth */
-  --radius-lg: 22px;
-  --radius-md: 16px;
-  --radius-sm: 10px;
-  --shadow-soft: 0 1px 2px rgba(60, 40, 10, 0.05), 0 18px 40px -18px rgba(60, 40, 10, 0.25);
-  --shadow-btn: 0 1px 2px rgba(60, 40, 10, 0.08), 0 4px 12px -4px rgba(60, 40, 10, 0.18);
+  --measure: 34em;
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(31, 27, 22, 0.06), 0 16px 40px -20px rgba(31, 27, 22, 0.3);
+
+  /* Kept for compatibility with any older selectors */
+  --accent-strong: var(--accent);
+  --border: var(--rule);
+  --border-strong: var(--rule-strong);
+  --extra-bg: transparent;
 }
 
 body.dark-mode {
-  /* Candlelight */
-  --bg: #12100c;
-  --bg-glow: rgba(216, 166, 86, 0.13);
-  --card: #1b1813;
-  --surface: #221e18;
-  --text: #ede5d6;
-  --muted: #a39782;
-  --faint: #6f6555;
+  /* Night reading */
+  --bg: #0f0e0c;
+  --text: #e8e1d5;
+  --muted: #958c7e;
+  --faint: #5f584e;
+  --rule: rgba(232, 225, 213, 0.1);
+  --rule-strong: rgba(232, 225, 213, 0.2);
+  --surface: #1a1815;
+  --card: #161412;
 
-  --accent: #d9a85a;
-  --accent-strong: #e8bd76;
-  --accent-soft: rgba(217, 168, 90, 0.16);
-  --on-accent: #1a140b;
+  --accent: #d4a35a;
+  --accent-soft: rgba(212, 163, 90, 0.16);
 
-  --border: rgba(237, 229, 214, 0.1);
-  --border-strong: rgba(237, 229, 214, 0.18);
   --danger: #ef8a76;
-  --extra-bg: rgba(217, 168, 90, 0.06);
-  --nav-bg: rgba(27, 24, 19, 0.94);
-
-  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.4), 0 24px 48px -20px rgba(0, 0, 0, 0.7);
-  --shadow-btn: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 14px -6px rgba(0, 0, 0, 0.6);
+  --nav-bg: rgba(15, 14, 12, 0.9);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 20px 44px -20px rgba(0, 0, 0, 0.8);
 }
 
 /* ===========================================================
@@ -79,27 +75,20 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-}
-
-html {
   background: var(--bg);
 }
 
 body {
-  background-color: var(--bg);
-  background-image:
-    radial-gradient(ellipse 90% 45% at 50% -5%, var(--bg-glow), transparent 70%);
-  background-repeat: no-repeat;
   color: var(--text);
   font-family: var(--font-ui);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern", "liga", "calt";
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   min-height: 100vh;
-  padding-bottom: 24px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -116,128 +105,511 @@ button {
 
 :focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 ::selection {
   background: var(--accent-soft);
 }
 
-/* App container */
+[hidden] {
+  display: none !important;
+}
+
 .app {
   width: 100%;
-  max-width: 560px;
-  padding: max(14px, env(safe-area-inset-top)) 16px 130px;
+  max-width: 640px;
+  padding: max(20px, env(safe-area-inset-top)) 28px 140px;
 }
 
 /* ===========================================================
-   Top bar
+   Progress — a hairline across the very top of the screen
+   =========================================================== */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.progress-track {
+  height: 2px;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+
+/* ===========================================================
+   Top bar — plan name and two quiet buttons
    =========================================================== */
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin: 4px 2px 16px;
+  margin: 4px -8px 0 0;
 }
 
 .top-left {
   display: flex;
   align-items: center;
-  gap: 12px;
   min-width: 0;
 }
 
-.top-right-actions {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.logo-icon {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  font-size: 1.2rem;
-  line-height: 1;
-  color: var(--accent);
-  background: transparent;
-  border: 1px solid var(--accent-soft);
-  border-radius: 50%;
-  box-shadow: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  min-width: 0;
-}
-
-.app-name {
-  font-size: 10.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.28em;
-  font-weight: 600;
-  color: var(--accent);
+.logo-icon,
+.app-name,
+#uploadPlanBtn {
+  display: none;
 }
 
 .plan-name {
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--text);
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Icon button */
+.top-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
 .icon-btn {
   border: 0;
   background: transparent;
   color: var(--muted);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: none;
-  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .icon-btn:hover {
-  color: var(--accent);
-  transform: translateY(-1px);
-}
-
-.icon-btn:active {
-  transform: translateY(0) scale(0.96);
+  color: var(--text);
+  background: var(--surface);
 }
 
 .icon-btn i {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1;
 }
 
 /* ===========================================================
-   Slide-down menu
+   Reading — header
+   =========================================================== */
+.reading {
+  padding: 0;
+}
+
+.reading-head {
+  margin: 56px 0 40px;
+}
+
+.reading-eyebrow {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.eyebrow-sep {
+  color: var(--faint);
+}
+
+.reading-day:empty,
+.reading-day:empty ~ .eyebrow-sep {
+  display: none;
+}
+
+.reading-title-row {
+  margin: 0;
+}
+
+.reading-title {
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 11vw, 3.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  text-wrap: balance;
+  font-variation-settings: "opsz" 72;
+}
+
+.reading-ref {
+  margin-top: 14px;
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.reading-ref:empty {
+  display: none;
+}
+
+/* ===========================================================
+   Devotional body — book-style opening
+   =========================================================== */
+.reading-body {
+  max-width: var(--measure);
+  font-family: var(--devotional-font-family);
+  font-size: calc(var(--devotional-font-size) + 3px);
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-wrap;
+  text-align: left;
+  hanging-punctuation: first;
+  text-wrap: pretty;
+  margin: 0;
+}
+
+.reading-body::first-letter {
+  float: left;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 3.55em;
+  line-height: 0.8;
+  margin: 0.06em 0.08em 0 -0.02em;
+  color: var(--text);
+}
+
+.reading-body::first-line {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.05em;
+  font-size: 1.04em;
+}
+
+.reading-body p {
+  margin: 0 0 1em;
+}
+
+/* ===========================================================
+   Section labels — a short gold rule over an italic word
+   =========================================================== */
+.section-label {
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--muted);
+  margin: 56px 0 16px;
+}
+
+.section-label::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--accent);
+  margin-bottom: 14px;
+}
+
+/* Hide the Scripture label whenever the passage is not showing */
+.scripture-label:has(+ .reading-bsb:not(.show)),
+.scripture-label:has(+ .reading-bsb[hidden]) {
+  display: none;
+}
+
+/* ===========================================================
+   Scripture (BSB)
+   =========================================================== */
+.reading-bsb {
+  max-width: var(--measure);
+  display: none;
+  margin: 0;
+}
+
+.reading-bsb.show {
+  display: block;
+}
+
+.chapter-heading {
+  font-family: var(--font-head);
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.verse-list {
+  display: block;
+}
+
+.reading-bsb .verse-list,
+.reading-bsb .verse-paragraph,
+.reading-bsb .verse,
+.reading-bsb .verse-text {
+  font-family: var(--devotional-font-family);
+  font-size: calc(var(--scripture-font-size) + 1px);
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.verse-paragraph {
+  margin: 0;
+  text-indent: 1.5em;
+  text-wrap: pretty;
+}
+
+.verse-paragraph:first-child {
+  text-indent: 0;
+}
+
+.reading-bsb .verse {
+  display: inline;
+}
+
+.reading-bsb .verse sup {
+  font-family: var(--font-ui);
+  font-size: 0.58em;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--accent);
+  margin-right: 0.18em;
+  vertical-align: 0.55em;
+  font-variant-numeric: lining-nums;
+}
+
+/* ===========================================================
+   Reflect / Pray
+   =========================================================== */
+.reading-extra {
+  max-width: var(--measure);
+  margin: 0;
+}
+
+.reading-extra:has(.extra-copy:empty) {
+  display: none;
+}
+
+.extra-copy {
+  font-family: var(--devotional-font-family);
+  font-size: calc(var(--devotional-font-size) + 3px);
+  line-height: 1.55;
+  white-space: pre-wrap;
+  color: var(--text);
+  text-wrap: pretty;
+}
+
+.reading-prayer .extra-copy {
+  font-style: italic;
+}
+
+.reading-footer {
+  display: none;
+}
+
+/* ===========================================================
+   Weekly meditation verse
+   =========================================================== */
+.meditation {
+  margin: -8px 0 8px;
+}
+
+.meditation-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.meditation-part {
+  color: var(--accent);
+}
+
+.meditation-part::before {
+  content: "·";
+  color: var(--faint);
+  margin-right: 10px;
+}
+
+.meditation h1 {
+  margin: 18px 0 22px;
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(2.2rem, 10vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.meditation h1::before {
+  content: "“";
+  margin-left: -0.42em;
+  color: var(--accent);
+}
+
+.meditation h1::after {
+  content: "”";
+  color: var(--accent);
+}
+
+.meditation h1:empty::before,
+.meditation h1:empty::after {
+  content: none;
+}
+
+.meditation summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+}
+
+.meditation summary::-webkit-details-marker {
+  display: none;
+}
+
+.meditation summary::after {
+  content: "→";
+  font-style: normal;
+  font-family: var(--font-ui);
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.meditation details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.meditation details[open] {
+  max-width: var(--measure);
+}
+
+.meditation h2 {
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 18px 0 8px;
+}
+
+.meditation details p {
+  font-family: var(--devotional-font-family);
+  font-size: calc(var(--devotional-font-size) + 1px);
+  line-height: 1.6;
+  margin: 0 0 0.8em;
+}
+
+/* ===========================================================
+   Bottom navigation — quiet text buttons
+   =========================================================== */
+.fixed-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 6px 16px calc(6px + env(safe-area-inset-bottom));
+  background: var(--nav-bg);
+  border-top: 1px solid var(--rule);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.3);
+}
+
+.reading-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.nav-btn {
+  min-height: 52px;
+  padding: 0 14px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-head);
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+#prevEntry {
+  color: var(--muted);
+}
+
+#nextEntry .nav-icon {
+  color: var(--accent);
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: var(--surface);
+}
+
+.nav-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.nav-icon {
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ===========================================================
+   Menu — a sheet that drops below the header
    =========================================================== */
 .menu-panel {
   background: var(--card);
-  border-radius: var(--radius-lg);
-  padding: 16px;
-  border: 1px solid var(--border);
-  margin-bottom: 14px;
-  box-shadow: var(--shadow-soft);
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid var(--rule);
+  margin: 10px 0 0;
+  box-shadow: var(--shadow);
   transform-origin: top;
   transform: scaleY(0);
   max-height: 0;
@@ -252,8 +624,7 @@ button {
 .menu-panel:not(.open) {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 0;
-  min-height: 0;
+  margin: 0;
   border-width: 0;
 }
 
@@ -270,20 +641,19 @@ button {
 
 .menu-label {
   display: block;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 14px;
   color: var(--muted);
-  margin: 0 0 6px 4px;
+  margin: 0 0 8px 2px;
 }
 
 #planSelect {
   width: 100%;
   padding: 10px 40px 10px 14px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-strong);
-  background-color: var(--surface);
+  border-radius: 10px;
+  border: 1px solid var(--rule-strong);
+  background-color: var(--bg);
   background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
     linear-gradient(135deg, var(--muted) 50%, transparent 50%);
   background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
@@ -292,98 +662,24 @@ button {
   -webkit-appearance: none;
   appearance: none;
   color: var(--text);
+  font-family: var(--font-head);
   font-size: 16px;
-  line-height: 1.4;
   min-height: 46px;
 }
 
 #planSelect:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
-.menu-btn {
-  width: 100%;
-  margin: 0;
-  padding: 11px 14px;
-  min-height: 44px;
-  border-radius: var(--radius-sm);
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  background: var(--accent);
-  color: var(--on-accent);
-  box-shadow: var(--shadow-btn);
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
-}
-
-.menu-btn:hover {
-  transform: translateY(-1px);
-}
-
-.menu-btn:active {
-  transform: translateY(0);
-}
-
-.menu-btn.subtle {
-  background: var(--surface);
-  color: var(--text);
-  border-color: var(--border);
-  box-shadow: none;
-  font-weight: 500;
-}
-
-.menu-btn.subtle i {
-  color: var(--accent);
-}
-
-.menu-btn.subtle:hover {
-  border-color: var(--border-strong);
-}
-
-.menu-btn.danger {
-  background: transparent;
-  color: var(--danger);
-  border-color: color-mix(in srgb, var(--danger) 40%, transparent);
-  box-shadow: none;
-}
-
-.menu-btn.danger:hover {
-  background: color-mix(in srgb, var(--danger) 10%, transparent);
-}
-
-.menu-btn i {
-  font-size: 1rem;
-  line-height: 1;
-  width: 18px;
-  text-align: center;
-}
-
-.menu-help {
-  margin: 4px 4px 0;
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.5;
-  text-transform: none;
-}
-
-/* Font size / family segmented control */
 .menu-font-controls {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) 1.4fr;
+  grid-template-columns: repeat(3, 1fr) 1.5fr;
   gap: 4px;
   padding: 4px;
   margin-bottom: 6px;
   border-radius: 12px;
   background: var(--surface);
-  border: 1px solid var(--border);
 }
 
 .font-btn {
@@ -391,31 +687,77 @@ button {
   background: transparent;
   border-radius: 8px;
   color: var(--text);
-  font-size: 14px;
-  font-weight: 600;
+  font-family: var(--font-head);
+  font-size: 15px;
   padding: 8px 6px;
-  min-height: 38px;
+  min-height: 40px;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .font-btn:hover {
   background: var(--card);
-  color: var(--accent);
-}
-
-.font-btn:active {
-  background: var(--accent-soft);
 }
 
 #fontFamilyToggle {
   font-family: var(--devotional-font-family);
-  font-weight: 500;
   background: var(--card);
-  box-shadow: var(--shadow-btn);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
-/* Plan upload */
+.menu-btn {
+  width: 100%;
+  margin: 0;
+  padding: 11px 14px;
+  min-height: 46px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--text);
+  color: var(--bg);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-btn.subtle {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--rule);
+}
+
+.menu-btn.subtle:hover {
+  background: var(--surface);
+}
+
+.menu-btn.subtle i {
+  color: var(--muted);
+}
+
+.menu-btn.danger {
+  background: transparent;
+  color: var(--danger);
+  border-color: color-mix(in srgb, var(--danger) 35%, transparent);
+}
+
+.menu-btn i {
+  font-size: 1rem;
+  width: 18px;
+  text-align: center;
+}
+
+.menu-help {
+  margin: 4px 2px 0;
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .plan-upload {
   display: flex;
   align-items: center;
@@ -423,9 +765,9 @@ button {
   flex-wrap: wrap;
   gap: 8px;
   padding: 12px 14px;
-  border-radius: var(--radius-sm);
-  border: 1px dashed var(--border-strong);
-  font-size: 12px;
+  border-radius: 10px;
+  border: 1px dashed var(--rule-strong);
+  font-size: 13px;
   margin-top: 4px;
 }
 
@@ -440,580 +782,29 @@ button {
   padding: 8px 14px;
   border-radius: 999px;
   background: var(--accent-soft);
-  color: var(--accent-strong);
+  color: var(--accent);
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid transparent;
-  transition: border-color 0.2s ease, transform 0.15s ease;
-}
-
-body.dark-mode .plan-upload-btn {
-  color: var(--accent);
-}
-
-.plan-upload-btn:hover {
-  border-color: var(--accent);
-  transform: translateY(-1px);
 }
 
 #planFileUpload {
   display: none;
 }
 
-.sample-download {
-  margin-top: 2px;
-}
-
-/* ===========================================================
-   Reading card
-   =========================================================== */
-.reading {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  padding: 18px 10px 10px;
-  position: relative;
-}
-
-.reading-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.reading-date {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--muted);
-}
-
-.reading-ref {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 15px;
-  color: var(--accent-strong);
-  white-space: nowrap;
-}
-
-body.dark-mode .reading-ref {
-  color: var(--accent);
-}
-
-.reading-ref:empty {
-  display: none;
-}
-
-/* Progress */
-.reading-progress {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 40px;
-}
-
-.progress-text {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.progress-text i {
-  font-size: 0.8rem;
-  color: var(--accent);
-}
-
-.progress-track {
-  width: 100%;
-  height: 2px;
-  border-radius: 999px;
-  background: var(--border);
-  overflow: hidden;
-}
-
-.progress-bar {
-  height: 100%;
-  min-width: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
-  width: 0%;
-  border-radius: 999px;
-  transition: width 0.35s ease;
-}
-
-/* Title */
-.reading-title-row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 22px;
-  text-align: center;
-}
-
-.reading-title-icon {
-  display: none;
-}
-
-.reading-title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 8vw, 2.7rem);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  text-align: center;
-  text-wrap: balance;
-}
-
-/* Ornamental divider under the title */
-.reading-title-row::after {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 9px;
-  margin-top: 6px;
-  background:
-    radial-gradient(circle, var(--accent) 0 2.5px, transparent 3px) center / 9px 9px no-repeat,
-    linear-gradient(var(--accent-soft), var(--accent-soft)) left center / 28px 1px no-repeat,
-    linear-gradient(var(--accent-soft), var(--accent-soft)) right center / 28px 1px no-repeat;
-}
-
-body.dark-mode .reading-title-row::after {
-  background:
-    radial-gradient(circle, var(--accent) 0 2.5px, transparent 3px) center / 9px 9px no-repeat,
-    linear-gradient(var(--border-strong), var(--border-strong)) left center / 28px 1px no-repeat,
-    linear-gradient(var(--border-strong), var(--border-strong)) right center / 28px 1px no-repeat;
-}
-
-/* Devotional body */
-.reading-body {
-  font-family: var(--devotional-font-family);
-  font-size: calc(var(--devotional-font-size) + 2px);
-  line-height: 1.75;
-  color: var(--text);
-  white-space: pre-wrap;
-  text-align: left;
-  hyphens: manual;
-  max-width: 62ch;
-  margin: 0 auto 22px;
-  padding: 0;
-  display: block;
-  min-height: auto;
-}
-
-.reading-body::first-letter {
-  float: left;
-  font-family: var(--font-display);
-  font-size: 3.4em;
-  line-height: 0.82;
-  font-weight: 500;
-  color: var(--accent);
-  padding: 0.08em 0.1em 0 0;
-}
-
-.reading-body p {
-  margin: 0 0 1em;
-}
-
-.reading-body p.first-paragraph {
-  text-indent: 0;
-}
-
-/* Scripture (BSB) */
-.reading-bsb {
-  margin: 0 auto;
-  max-width: 62ch;
-  padding: 0;
-  background: none;
-  border: 0;
-  color: var(--text);
-  display: none;
-  position: relative;
-}
-
-.reading-bsb::before {
-  content: "Scripture";
-}
-
-/* Shared centered section label: ——— LABEL ——— */
-.reading-bsb::before,
-.extra-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin: 34px 0 18px;
-  font-family: var(--font-ui);
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background:
-    linear-gradient(var(--border-strong), var(--border-strong)) left center / calc(50% - 64px) 1px no-repeat,
-    linear-gradient(var(--border-strong), var(--border-strong)) right center / calc(50% - 64px) 1px no-repeat;
-}
-
-.reading-bsb.show {
-  display: block;
-}
-
-.chapter-heading {
-  font-family: var(--font-display);
-  font-style: italic;
-  margin-bottom: 0.6rem;
-  color: var(--muted);
-  font-size: 1rem;
-}
-
-.verse-list {
-  display: block;
-}
-
-.verse-paragraph {
-  margin: 0 0 0.8rem;
-  text-indent: 1.4rem;
-}
-
-.verse-paragraph:first-child {
-  margin-top: 0;
-}
-
-/* scripture typography */
-.reading-bsb .verse-list,
-.reading-bsb .verse-paragraph,
-.reading-bsb .verse,
-.reading-bsb .verse-text {
-  font-size: var(--scripture-font-size);
-  font-family: var(--devotional-font-family);
-  line-height: 1.75;
-  letter-spacing: 0.005em;
-  color: var(--text);
-}
-
-.reading-bsb .verse {
-  display: inline;
-  margin: 0;
-}
-
-.reading-bsb .verse sup {
-  font-family: var(--font-ui);
-  font-size: 0.6em;
-  line-height: 1;
-  font-weight: 700;
-  color: var(--accent);
-  margin-right: 0.2rem;
-  vertical-align: super;
-}
-
-/* ===========================================================
-   Reflect / Pray
-   =========================================================== */
-.reading-extra {
-  margin: 0 auto;
-  max-width: 54ch;
-  padding: 0;
-  border: 0;
-  background: none;
-  display: block;
-  text-align: center;
-}
-
-.reading-extra:has(.extra-copy:empty) {
-  display: none;
-}
-
-.extra-label i,
-.extra-label .svg-icon {
-  display: none;
-}
-
-.extra-copy {
-  font-family: var(--devotional-font-family);
-  font-size: calc(var(--devotional-font-size) + 2px);
-  line-height: 1.7;
-  white-space: pre-wrap;
-  color: var(--text);
-  text-align: center;
-  text-wrap: pretty;
-}
-
-.reading-prayer .extra-copy {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: calc(var(--devotional-font-size) + 3px);
-  color: var(--muted);
-}
-
-body.dark-mode .reading-prayer .extra-copy {
-  color: var(--text);
-  opacity: 0.85;
-}
-
-.extra-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.reading-footer {
-  margin-top: 44px;
-  padding-top: 0;
-  border-top: 0;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  color: var(--faint);
-  text-align: center;
-}
-
-.reading-footer:empty {
-  display: none;
-}
-
-/* ===========================================================
-   Weekly meditation (Dwelling With God, later weeks)
-   =========================================================== */
-.reading-title-row[hidden],
-.reading-body[hidden],
-.meditation[hidden],
-.reading-bsb[hidden] {
-  display: none;
-}
-
-.meditation {
-  margin: 0 0 8px;
-  padding: 0;
-  background: none;
-  border: 0;
-  text-align: center;
-}
-
-.meditation-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.meditation-part {
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: var(--accent);
-}
-
-body.dark-mode .meditation-part {
-  color: var(--accent);
-}
-
-.meditation-part[hidden] {
-  display: none;
-}
-
-.meditation h1 {
-  margin: 1.4rem 0 1.4rem;
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-style: italic;
-  font-size: clamp(1.9rem, 8vw, 2.6rem);
-  line-height: 1.25;
-  color: var(--text);
-  text-wrap: balance;
-}
-
-.meditation h1::before,
-.meditation h1::after {
-  color: var(--accent);
-}
-
-.meditation h1::before {
-  content: "“";
-}
-
-.meditation h1::after {
-  content: "”";
-}
-
-.meditation h1:empty::before,
-.meditation h1:empty::after {
-  content: none;
-}
-
-.meditation details {
-  text-align: left;
-  padding-top: 4px;
-}
-
-.meditation summary {
-  cursor: pointer;
-  color: var(--accent);
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 15px;
-  text-align: center;
-  list-style: none;
-}
-
-.meditation summary::-webkit-details-marker {
-  display: none;
-}
-
-.meditation summary::after {
-  content: " ›";
-}
-
-.meditation details[open] summary::after {
-  content: " ‹";
-}
-
-.meditation h2 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 1.2em;
-  margin: 0.8rem 0 0.4rem;
-}
-
-.meditation details p {
-  font-family: var(--devotional-font-family);
-  line-height: 1.65;
-  margin: 0 0 0.7rem;
-}
-
-/* ===========================================================
-   Bottom navigation
-   =========================================================== */
-.fixed-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-  background: var(--nav-bg);
-  border-top: 1px solid var(--border);
-  box-shadow: none;
-  -webkit-backdrop-filter: blur(14px) saturate(1.4);
-  backdrop-filter: blur(14px) saturate(1.4);
-}
-
-.reading-nav {
-  display: flex;
-  gap: 10px;
-  margin: 0 auto;
-  max-width: 528px;
-}
-
-.nav-btn {
-  flex: 1;
-  min-height: 46px;
-  border-radius: 999px;
-  border: 0;
-  background: transparent;
-  color: var(--text);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0 14px;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
-}
-
-#prevEntry {
-  background: transparent;
-  color: var(--muted);
-}
-
-.nav-btn:hover:not(:disabled) {
-  background: var(--accent-soft);
-}
-
-.nav-btn:active:not(:disabled) {
-  transform: scale(0.97);
-}
-
-#nextEntry {
-  background: var(--accent);
-  color: var(--on-accent);
-  box-shadow: none;
-}
-
-#nextEntry:hover:not(:disabled) {
-  background: var(--accent-strong);
-}
-
-.nav-btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-.nav-btn i {
-  font-size: 1rem;
-}
-
-.nav-icon {
-  font-size: 1.05rem;
-  line-height: 1;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-label {
-  line-height: 1;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 /* ===========================================================
    Editor
    =========================================================== */
 .editor-panel {
-  margin-bottom: 14px;
+  margin-top: 14px;
   background: var(--card);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--rule);
+  padding: 18px;
   display: none;
   flex-direction: column;
   gap: 10px;
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow);
 }
 
 .editor-panel.open {
@@ -1028,44 +819,40 @@ body.dark-mode .meditation-part {
 
 .editor-header h2 {
   margin: 0;
-  font-size: 18px;
+  font-family: var(--font-head);
   font-weight: 500;
-  font-family: var(--font-display);
-  display: flex;
-  align-items: center;
+  font-size: 20px;
 }
 
 .editor-header i {
-  margin-right: 8px;
-  color: var(--accent);
+  display: none;
 }
 
 .editor-help {
   margin: 0;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 1.5;
   color: var(--muted);
 }
 
 .editor-textarea {
   width: 100%;
-  min-height: 200px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-strong);
+  min-height: 220px;
+  border-radius: 10px;
+  border: 1px solid var(--rule-strong);
   color: var(--text);
+  background: var(--bg);
   font-size: 13px;
   line-height: 1.5;
   padding: 12px;
   resize: vertical;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
-  background: var(--surface);
 }
 
 .editor-textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 .editor-actions .menu-btn {
@@ -1089,15 +876,14 @@ body.dark-mode .meditation-part {
 .toast {
   position: fixed;
   left: 50%;
-  bottom: calc(env(safe-area-inset-bottom) + 84px);
-  transform: translateX(-50%) translateY(16px);
+  bottom: calc(env(safe-area-inset-bottom) + 80px);
+  transform: translateX(-50%) translateY(12px);
   background: var(--text);
   color: var(--bg);
   padding: 10px 18px;
   border-radius: 999px;
-  font-size: 13px;
-  font-weight: 500;
-  box-shadow: var(--shadow-soft);
+  font-size: 14px;
+  box-shadow: var(--shadow);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-out, transform 0.2s ease-out;
@@ -1114,23 +900,20 @@ body.dark-mode .meditation-part {
 /* ===========================================================
    Responsive & motion
    =========================================================== */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .app {
-    padding-top: 36px;
+    padding-top: 40px;
   }
 
-  .reading {
-    padding: 30px 36px 30px;
+  .reading-head {
+    margin-top: 80px;
   }
 }
 
 @media (max-width: 360px) {
-  .reading {
-    padding: 18px 16px 22px;
-  }
-
-  .nav-label {
-    display: none;
+  .app {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
