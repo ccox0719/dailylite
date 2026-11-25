@@ -1021,10 +1021,10 @@ button {
 #nextEntry { justify-self: end; }
 .nav-jump { justify-content: center; }
 .nav-jump span {
-  width: 9px;
-  height: 9px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: currentColor;
+  background: var(--accent);
 }
 
 .jump-dialog {
