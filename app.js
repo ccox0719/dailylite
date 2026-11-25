@@ -903,6 +903,9 @@ function renderMeditation(plan, entry) {
   document.getElementById("meditationTitle").textContent = week.title;
   document.getElementById("meditationReference").textContent = `${week.reference} (CSB)`;
   document.getElementById("meditationConnection").textContent = week.studyConnection;
+  const verseContext = document.getElementById("meditationVerseContext");
+  verseContext.textContent = week.verseContext || "";
+  verseContext.hidden = !week.verseContext;
   document.getElementById("meditationContext").textContent = `Before your first walk, read ${week.context}.`;
 
   // Split the week evenly across the phrases: with two phrases, days 1–4 show

@@ -17,7 +17,8 @@
           "question": "Whose grief do I hurry past because I don’t know what to say?",
           "prayer": "Lord, help me slow down and be present with someone who’s hurting."
         }
-      ]
+      ],
+      "verseContext": "Paul describes sincere love as sharing in one another’s joy and grief."
     },
     "392": {
       "title": "Make Room at the Table",
@@ -26,16 +27,12 @@
       "context": "Romans 15:1–7",
       "phrases": [
         {
-          "quote": "Therefore welcome one another",
-          "question": "Who’s easy for me to be polite to but harder for me to make room for?",
-          "prayer": "Jesus, show me who I tend to overlook. Help me make room for them."
-        },
-        {
-          "quote": "just as Christ also welcomed you, to the glory of God.",
-          "question": "What do I still feel I have to prove before I can believe Christ is glad to receive me?",
-          "prayer": "Jesus, help me believe that you welcome me. Let that change how I welcome others."
+          "quote": "Therefore welcome one another, just as Christ also welcomed you, to the glory of God.",
+          "question": "How could the way Christ welcomed me shape how I make room for someone whose convictions differ from mine?",
+          "prayer": "Jesus, thank you for welcoming me. Help me make room for others as you made room for me."
         }
-      ]
+      ],
+      "verseContext": "Paul urges believers with different convictions to welcome one another as Christ welcomed them."
     },
     "399": {
       "title": "Put Down What You’re Carrying",
@@ -44,16 +41,12 @@
       "context": "1 Peter 5:5–11",
       "phrases": [
         {
-          "quote": "casting all your cares on him",
-          "question": "What worry do I keep rehearsing as though one more pass through it will give me control?",
-          "prayer": "Father, I keep picking this back up. Help me put it in your hands again."
-        },
-        {
-          "quote": "because he cares about you.",
-          "question": "Which part of what I’m carrying is hardest to believe God cares about?",
-          "prayer": "Father, help me believe that this matters to you because I matter to you."
+          "quote": "casting all your cares on him because he cares about you.",
+          "question": "What care am I struggling to entrust to God, and what does Peter give me reason to believe about him?",
+          "prayer": "Father, help me trust your care enough to put this worry in your hands."
         }
-      ]
+      ],
+      "verseContext": "Peter calls believers to humble themselves under God’s mighty hand by entrusting their cares to him."
     },
     "406": {
       "title": "What I’m Glad to Talk About",
@@ -66,7 +59,8 @@
           "question": "When I tell the story of something good in my life, what has the Lord done that I tend to leave out?",
           "prayer": "Lord, help me notice what you’ve done and be glad to talk about it."
         }
-      ]
+      ],
+      "verseContext": "Paul points the church to what God has given them in Christ, including wisdom, righteousness, sanctification, and redemption."
     }
   }
 }
