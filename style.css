@@ -522,6 +522,7 @@ button {
 }
 
 .meditation h1 {
+  text-align: center;
   margin: 14px 0 18px;
   font-family: var(--font-walk);
   font-weight: 500;
@@ -535,7 +536,6 @@ button {
 
 .meditation h1::before {
   content: "“";
-  margin-left: -0.36em;
   color: var(--accent);
 }
 
