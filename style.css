@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=Playfair+Display:wght@500;600&family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=Cormorant+Garamond:ital,wght@1,500&family=Playfair+Display:wght@500;600&family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap");
 
 /* ===========================================================
    Daily Light — "printed page" design
@@ -29,6 +29,7 @@
   --devotional-font-family: "Literata", Georgia, "Times New Roman", serif;
   --scripture-font-size: 18px;
   --font-head: "Literata", Georgia, "Times New Roman", serif;
+  --font-walk: "Cormorant Garamond", "Literata", Georgia, serif;
   --font-ui: "Source Sans 3", "Inter", system-ui, -apple-system, sans-serif;
 
   --measure: 34em;
@@ -521,21 +522,20 @@ button {
 }
 
 .meditation h1 {
-  margin: 26px 0 28px;
-  font-family: var(--font-head);
-  font-weight: 400;
+  margin: 22px 0 26px;
+  font-family: var(--font-walk);
+  font-weight: 500;
   font-style: italic;
-  font-size: clamp(2.5rem, 12vw, 3.5rem);
-  line-height: 1.06;
-  letter-spacing: -0.025em;
+  font-size: clamp(3rem, 14vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
   color: var(--text);
   text-wrap: balance;
-  font-variation-settings: "opsz" 72;
 }
 
 .meditation h1::before {
   content: "“";
-  margin-left: -0.42em;
+  margin-left: -0.36em;
   color: var(--accent);
 }
 
