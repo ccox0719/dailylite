@@ -517,6 +517,22 @@ function savePlanProgress() {
   }
 }
 
+const DWELLING_PLAN_ID = "csv-1770836983614";
+let meditationWeeks = {};
+let shownMeditationWeek = null;
+let shownPhraseIndex = 0;
+
+async function loadBundledJson(path) {
+  try {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } catch (error) {
+    console.warn(`Could not load ${path}`, error);
+    return null;
+  }
+}
+
 async function loadDefaultPlan() {
   try {
     const response = await fetch("./dwelling-with-god.json");
@@ -858,6 +874,51 @@ function renderBodyText(rawText) {
   container.textContent = rawText || "";
 }
 
+function renderMeditation(plan, entry) {
+  const panel = document.getElementById("meditation");
+  const day = entry?.dayIndex;
+  const start = Number.isInteger(day) && day >= 385
+    ? day - (day - 385) % 7
+    : null;
+  const week = plan?.id === DWELLING_PLAN_ID ? meditationWeeks[start] : null;
+  panel.hidden = !week;
+  document.getElementById("readingTitleRow").hidden = Boolean(week);
+  document.getElementById("readingBody").hidden = Boolean(week);
+  const contextPanel = document.getElementById("meditationContextPanel");
+  if (!week) {
+    contextPanel.open = false;
+    shownMeditationWeek = null;
+    return;
+  }
+
+  if (shownMeditationWeek !== start) {
+    shownMeditationWeek = start;
+    shownPhraseIndex = 0;
+    contextPanel.open = false;
+  }
+
+  document.getElementById("meditationTitle").textContent = week.title;
+  document.getElementById("meditationReference").textContent = `${week.reference} (CSB)`;
+  document.getElementById("meditationConnection").textContent = week.studyConnection;
+  document.getElementById("meditationContext").textContent = `Before your first walk, read ${week.context}.`;
+  const select = document.getElementById("meditationWalk");
+  select.replaceChildren(...week.phrases.map((_, index) =>
+    new Option(String(index + 1), String(index))
+  ));
+  select.value = String(shownPhraseIndex);
+  select.parentElement.hidden = week.phrases.length < 2;
+
+  const showPhrase = index => {
+    shownPhraseIndex = index;
+    const phrase = week.phrases[index];
+    document.getElementById("meditationQuote").textContent = phrase.quote;
+    document.getElementById("meditationQuestion").textContent = phrase.question;
+    document.getElementById("meditationPrayer").textContent = phrase.prayer;
+  };
+  select.onchange = () => showPhrase(Number(select.value));
+  showPhrase(shownPhraseIndex);
+}
+
 function renderCurrentEntry() {
   const readingTitle = document.getElementById("readingTitle");
   const readingRef = document.getElementById("readingRef");
@@ -886,6 +947,7 @@ function renderCurrentEntry() {
     updateProgressDisplay(0, 0);
     updateNavigationButtons(0);
     hideBsbSection();
+    renderMeditation(null, null);
     return;
   }
 
@@ -909,6 +971,7 @@ function renderCurrentEntry() {
   updateProgressDisplay(idx, entries.length);
   updateNavigationButtons(entries.length);
   renderBsbText(entry.reference);
+  renderMeditation(plan, entry);
 }
 
 function findTodayEntryIndex(plan) {
@@ -1040,7 +1103,13 @@ const bsbCache = new Map();
 let lastBsbRequest = null;
 
 async function init() {
-  const defaultPlan = await loadDefaultPlan();
+  const [defaultPlan, meditations] = await Promise.all([
+    loadDefaultPlan(),
+    loadBundledJson("meditations.json")
+  ]);
+  if (meditations?.version === 1 && meditations.weeks) {
+    meditationWeeks = meditations.weeks;
+  }
   state.plans = loadPlans(defaultPlan);
   state.activePlanId = loadActivePlanId(state.plans, defaultPlan);
   state.planProgress = loadPlanProgress();

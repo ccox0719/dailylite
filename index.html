@@ -137,7 +137,26 @@
       </div>
 
 
-      <div class="reading-title-row">
+      <section class="meditation" id="meditation" aria-labelledby="meditationQuote" hidden>
+        <div class="meditation-heading">
+          <span id="meditationReference"></span>
+          <label>Walk <select id="meditationWalk"></select></label>
+        </div>
+        <div aria-live="polite">
+          <h1 id="meditationQuote"></h1>
+          <p><strong>Reflect</strong><br><span id="meditationQuestion"></span></p>
+          <p><strong>Pray</strong><br><span id="meditationPrayer"></span></p>
+        </div>
+        <details id="meditationContextPanel">
+          <summary>About this week</summary>
+          <h2 id="meditationTitle"></h2>
+          <p id="meditationConnection"></p>
+          <p id="meditationContext"></p>
+          <p>Repeat a phrase whenever you like. On the weekend, return to the words that stayed with you. If you miss a walk, pick up wherever you want.</p>
+        </details>
+      </section>
+
+      <div class="reading-title-row" id="readingTitleRow">
         <i class="bi bi-book reading-title-icon" aria-hidden="true"></i>
         <h1 id="readingTitle" class="reading-title"></h1>
       </div>

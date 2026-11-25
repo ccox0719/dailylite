@@ -768,3 +768,47 @@ body {
     padding-top: 32px;
   }
 }
+
+.reading-title-row[hidden],
+.reading-body[hidden],
+.meditation[hidden] {
+  display: none;
+}
+
+.meditation {
+  margin-block: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+}
+
+.meditation-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+.meditation select {
+  font: inherit;
+  min-height: 2.75rem;
+  margin-inline-start: 0.35rem;
+}
+
+.meditation h1 {
+  margin-block: 0.5rem 1rem;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  line-height: 1.25;
+}
+
+.meditation summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.meditation h2 {
+  font-size: 1.1em;
+}
