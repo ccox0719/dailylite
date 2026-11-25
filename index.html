@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Daily Lite</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <link rel="stylesheet" href="style.css?v=guide" />
+  <link rel="stylesheet" href="style.css?v=compact" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="manifest" href="manifest.json?v=lite" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=flame" />
@@ -233,10 +233,10 @@
 
     <dialog class="jump-dialog install-dialog" id="installDialog" aria-labelledby="installTitle">
       <div class="install-head">
-        <img src="icon-192.png?v=flame" alt="" width="56" height="56" />
+        <img src="icon-192.png?v=flame" alt="" width="44" height="44" />
         <div>
           <h2 id="installTitle" tabindex="-1">Install Daily Lite</h2>
-          <p class="install-lede">Keep it on your home screen and open it like an app — full screen, no browser bars.</p>
+          <p class="install-lede">Opens like an app — no browser bars.</p>
         </div>
       </div>
 
@@ -248,32 +248,30 @@
       <section class="install-steps" data-platform="ios">
         <h3><i class="bi bi-phone" aria-hidden="true"></i> iPhone &amp; iPad</h3>
         <ol>
-          <li>Open this page in <strong>Safari</strong>.</li>
-          <li>Tap the <strong>Share</strong> button <i class="bi bi-box-arrow-up" aria-hidden="true"></i> (on newer iPhones it’s inside the <strong>•••</strong> menu).</li>
-          <li>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
-          <li>Leave <strong>Open as Web App</strong> on if you see it, then tap <strong>Add</strong>.</li>
+          <li>In <strong>Safari</strong>, tap <strong>Share</strong> <i class="bi bi-box-arrow-up" aria-hidden="true"></i> (or <strong>•••</strong> → Share).</li>
+          <li>Tap <strong>Add to Home Screen</strong> → <strong>Add</strong>.</li>
         </ol>
       </section>
 
       <section class="install-steps" data-platform="android">
         <h3><i class="bi bi-android2" aria-hidden="true"></i> Android</h3>
         <ol>
-          <li>Open this page in <strong>Chrome</strong>.</li>
-          <li>Tap the <strong>⋮</strong> menu in the top corner.</li>
-          <li>Tap <strong>Add to home screen</strong>, then <strong>Install</strong>.</li>
+          <li>In <strong>Chrome</strong>, tap <strong>⋮</strong>.</li>
+          <li>Tap <strong>Add to home screen</strong> → <strong>Install</strong>.</li>
         </ol>
-        <p class="install-note">Samsung Internet: menu → <strong>Add page to</strong> → <strong>Home screen</strong>.</p>
       </section>
 
       <section class="install-steps" data-platform="desktop">
         <h3><i class="bi bi-laptop" aria-hidden="true"></i> Computer</h3>
         <ol>
-          <li><strong>Chrome:</strong> click the install icon <i class="bi bi-display" aria-hidden="true"></i> at the right end of the address bar, or open <strong>⋮</strong> → <strong>Cast, save, and share</strong> → <strong>Install page as app</strong>.</li>
-          <li><strong>Edge:</strong> open <strong>⋯</strong> → <strong>Apps</strong> → <strong>Install this site as an app</strong>.</li>
-          <li><strong>Safari on Mac:</strong> choose <strong>File</strong> → <strong>Add to Dock</strong>.</li>
+          <li><strong>Chrome / Edge:</strong> click the install icon <i class="bi bi-display" aria-hidden="true"></i> in the address bar.</li>
+          <li><strong>Safari (Mac):</strong> File → <strong>Add to Dock</strong>.</li>
         </ol>
-        <p class="install-note">Firefox can’t install web apps — bookmark the page instead.</p>
       </section>
+
+      <details class="install-more" id="installMore">
+        <summary>Other devices</summary>
+      </details>
 
       <form method="dialog" class="jump-actions">
         <button type="submit">Done</button>
@@ -296,6 +294,6 @@
   </div>
 
   <script src="app.js?v=day-one-meditations"></script>
-  <script src="install.js?v=guide" defer></script>
+  <script src="install.js?v=compact" defer></script>
 </body>
 </html>

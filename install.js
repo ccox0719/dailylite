@@ -56,22 +56,14 @@ function writeDismissed() {
 // ----- Dialog: current device first ----------------------------------
 
 function arrangeDialog() {
+  // Show only this device's steps; tuck the others into "Other devices".
+  const more = document.getElementById("installMore");
   const sections = [...installDialog.querySelectorAll(".install-steps")];
-  const current = sections.find(section => section.dataset.platform === platform);
-  if (!current) return;
-
+  const current = sections.find(section => section.dataset.platform === platform) || sections[0];
   current.classList.add("is-current");
-  const firstSection = sections[0];
-  if (current !== firstSection) firstSection.before(current);
-
-  // Label the other devices so the current one reads as "yours"
-  let divider = installDialog.querySelector(".install-others");
-  if (!divider) {
-    divider = document.createElement("p");
-    divider.className = "install-others";
-    divider.textContent = "Other devices";
-    current.after(divider);
-  }
+  sections.forEach(section => {
+    if (section !== current) more.append(section);
+  });
 }
 
 function showDialog() {
