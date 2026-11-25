@@ -1126,3 +1126,21 @@ button {
   font-size: 0.8em;
   letter-spacing: 0.07em;
 }
+
+/* ===========================================================
+   Drop caps: let the browser align them precisely.
+   initial-letter sinks the letter exactly two lines, with its top on the
+   first line's capitals and its foot on the second line's baseline.
+   (Chrome/Edge 110+, Safari via -webkit-; others keep the float above.)
+   =========================================================== */
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  .reading-body::first-letter,
+  .reading-bsb .verse-paragraph.chapter-opening::first-letter {
+    float: none;
+    font-size: 1em;
+    line-height: normal;
+    margin: 0 0.14em 0 0;
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+  }
+}
