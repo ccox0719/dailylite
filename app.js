@@ -1053,6 +1053,7 @@ function setEntryIndex(index) {
 
 function updateNavigationButtons(entryCount) {
   if (!navigationControls.prev || !navigationControls.next) return;
+  navigationControls.jump.disabled = entryCount === 0;
   if (entryCount <= 1) {
     navigationControls.prev.disabled = true;
     navigationControls.next.disabled = true;
@@ -1101,7 +1102,8 @@ let state = {
 
 const navigationControls = {
   prev: null,
-  next: null
+  next: null,
+  jump: null
 };
 
 const bsbCache = new Map();
@@ -1703,7 +1705,38 @@ function wireEditor() {
 function wireNavigation() {
   navigationControls.prev = document.getElementById("prevEntry");
   navigationControls.next = document.getElementById("nextEntry");
-  if (!navigationControls.prev || !navigationControls.next) return;
+  navigationControls.jump = document.getElementById("jumpToDay");
+  const dialog = document.getElementById("jumpDayDialog");
+  const form = document.getElementById("jumpDayForm");
+  const input = document.getElementById("jumpDayInput");
+  const error = document.getElementById("jumpDayError");
+
+  navigationControls.jump.addEventListener("click", () => {
+    const entry = getCurrentPlan()?.entries[state.currentEntryIndex];
+    input.value = entry?.dayIndex ?? state.currentEntryIndex + 1;
+    error.textContent = "";
+    dialog.showModal();
+    input.select();
+  });
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    const day = input.valueAsNumber;
+    const entries = getCurrentPlan()?.entries ?? [];
+    const index = Number.isInteger(day) && day > 0
+      ? entries.findIndex((entry, i) => (entry.dayIndex ?? i + 1) === day)
+      : -1;
+    if (index < 0) {
+      error.textContent = "Enter a day that exists in this plan.";
+      input.focus();
+      return;
+    }
+    dialog.close();
+    setEntryIndex(index);
+    window.scrollTo(0, 0);
+  });
+
+  document.getElementById("cancelJumpDay").addEventListener("click", () => dialog.close());
 
   navigationControls.prev.addEventListener("click", () => changeEntryIndex(-1));
   navigationControls.next.addEventListener("click", () => changeEntryIndex(1));

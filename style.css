@@ -1011,3 +1011,58 @@ button {
   line-height: 1.5;
   color: var(--muted);
 }
+
+.reading-nav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr);
+}
+
+#prevEntry { justify-self: start; }
+#nextEntry { justify-self: end; }
+.nav-jump { justify-content: center; }
+.nav-jump span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.jump-dialog {
+  box-sizing: border-box;
+  width: min(22rem, calc(100% - 2rem));
+  border: 1px solid var(--rule-strong);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--text);
+  padding: 1.25rem;
+  font-family: var(--font-ui);
+}
+
+.jump-dialog::backdrop { background: rgb(0 0 0 / 45%); }
+.jump-dialog h2 { margin: 0 0 1rem; font-family: var(--font-head); }
+.jump-dialog input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.65rem;
+  font: inherit;
+  font-size: max(16px, 1em);
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+}
+#jumpDayError { color: var(--danger); margin: 0.5rem 0; }
+.jump-actions { display: flex; justify-content: flex-end; gap: 0.5rem; }
+.jump-actions button {
+  min-height: 44px;
+  padding-inline: 1rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--surface);
+  font: inherit;
+  cursor: pointer;
+}
+.jump-actions button[type="submit"] { background: var(--accent-soft); }

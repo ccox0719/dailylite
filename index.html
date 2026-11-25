@@ -200,12 +200,28 @@
           <span class="nav-icon nav-icon--prev" aria-hidden="true">←</span>
           <span class="nav-label">Previous</span>
         </button>
+        <button class="nav-btn nav-jump" id="jumpToDay" type="button" aria-label="Go to study day" aria-haspopup="dialog" disabled>
+          <span aria-hidden="true"></span>
+        </button>
         <button class="nav-btn" id="nextEntry" type="button" aria-label="Next entry">
           <span class="nav-label">Next</span>
           <span class="nav-icon nav-icon--next" aria-hidden="true">→</span>
         </button>
       </div>
     </nav>
+
+    <dialog class="jump-dialog" id="jumpDayDialog" aria-labelledby="jumpDayTitle">
+      <form id="jumpDayForm" novalidate>
+        <h2 id="jumpDayTitle">Go to study day</h2>
+        <label for="jumpDayInput">Day number</label>
+        <input id="jumpDayInput" type="number" inputmode="numeric" min="1" required autofocus aria-describedby="jumpDayError">
+        <p id="jumpDayError" role="alert"></p>
+        <div class="jump-actions">
+          <button type="button" id="cancelJumpDay">Cancel</button>
+          <button type="submit">Go</button>
+        </div>
+      </form>
+    </dialog>
 
     <div id="toast" class="toast"></div>
   </div>
