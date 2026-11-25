@@ -912,8 +912,8 @@ function renderMeditation(plan, entry) {
     shownPhraseIndex = index;
     const phrase = week.phrases[index];
     document.getElementById("meditationQuote").textContent = phrase.quote;
-    document.getElementById("meditationQuestion").textContent = phrase.question;
-    document.getElementById("meditationPrayer").textContent = phrase.prayer;
+    document.getElementById("readingQuestions").textContent = phrase.question;
+    document.getElementById("readingPrayer").textContent = phrase.prayer;
   };
   select.onchange = () => showPhrase(Number(select.value));
   showPhrase(shownPhraseIndex);
