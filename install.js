@@ -1,4 +1,4 @@
-// ----- Install Daily Light -------------------------------------------
+// ----- Install Daily Lite -------------------------------------------
 // Shows how to add the app to the home screen / desktop on any device:
 //  • a one-time banner above the bottom bar (dismissible, remembered)
 //  • the header download button and an "Install app" item in the menu

@@ -1,8 +1,8 @@
-// Daily Light no longer uses a service worker.
+// Daily Lite no longer uses a service worker.
 // This file replaces an old one that was still installed in some browsers and
 // was breaking page loads. When a browser checks for an update, it gets this
 // version, which clears the old caches, unregisters itself, and reloads any
-// open Daily Light tabs so they load fresh from the network.
+// open Daily Lite tabs so they load fresh from the network.
 
 self.addEventListener("install", () => {
   self.skipWaiting();

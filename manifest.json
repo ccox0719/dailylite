@@ -1,6 +1,6 @@
 {
-  "name": "Daily Light",
-  "short_name": "Daily Light",
+  "name": "Daily Lite",
+  "short_name": "Daily Lite",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f7f3ec",

@@ -1802,7 +1802,7 @@ function showToast(message) {
 }
 
 // Init on load
-// Daily Light doesn't use a service worker. Remove any left over from older
+// Daily Lite doesn't use a service worker. Remove any left over from older
 // versions, since a stale one can block the stylesheet and data from loading.
 function removeStaleServiceWorkers() {
   if (!("serviceWorker" in navigator)) return;
