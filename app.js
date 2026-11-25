@@ -1756,4 +1756,26 @@ function showToast(message) {
 }
 
 // Init on load
+// Daily Light doesn't use a service worker. Remove any left over from older
+// versions, since a stale one can block the stylesheet and data from loading.
+function removeStaleServiceWorkers() {
+  if (!("serviceWorker" in navigator)) return;
+  navigator.serviceWorker
+    .getRegistrations()
+    .then(registrations => {
+      if (!registrations.length) return;
+      return Promise.all(registrations.map(reg => reg.unregister()))
+        .then(() => ("caches" in window ? caches.keys() : []))
+        .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+        .then(() => {
+          if (!sessionStorage.getItem("dailylite_sw_cleared")) {
+            sessionStorage.setItem("dailylite_sw_cleared", "1");
+            window.location.reload();
+          }
+        });
+    })
+    .catch(() => {});
+}
+
+removeStaleServiceWorkers();
 document.addEventListener("DOMContentLoaded", init);
