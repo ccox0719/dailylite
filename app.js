@@ -520,7 +520,6 @@ function savePlanProgress() {
 const DWELLING_PLAN_ID = "csv-1770836983614";
 let meditationWeeks = {};
 let shownMeditationWeek = null;
-let shownPhraseIndex = 0;
 
 async function loadBundledJson(path) {
   try {
@@ -893,7 +892,6 @@ function renderMeditation(plan, entry) {
 
   if (shownMeditationWeek !== start) {
     shownMeditationWeek = start;
-    shownPhraseIndex = 0;
     contextPanel.open = false;
   }
 
@@ -901,22 +899,21 @@ function renderMeditation(plan, entry) {
   document.getElementById("meditationReference").textContent = `${week.reference} (CSB)`;
   document.getElementById("meditationConnection").textContent = week.studyConnection;
   document.getElementById("meditationContext").textContent = `Before your first walk, read ${week.context}.`;
-  const select = document.getElementById("meditationWalk");
-  select.replaceChildren(...week.phrases.map((_, index) =>
-    new Option(String(index + 1), String(index))
-  ));
-  select.value = String(shownPhraseIndex);
-  select.parentElement.hidden = week.phrases.length < 2;
 
-  const showPhrase = index => {
-    shownPhraseIndex = index;
-    const phrase = week.phrases[index];
-    document.getElementById("meditationQuote").textContent = phrase.quote;
-    document.getElementById("readingQuestions").textContent = phrase.question;
-    document.getElementById("readingPrayer").textContent = phrase.prayer;
-  };
-  select.onchange = () => showPhrase(Number(select.value));
-  showPhrase(shownPhraseIndex);
+  // Split the week evenly across the phrases: with two phrases, days 1–4 show
+  // the first half of the verse and days 5–7 show the second half.
+  const phraseCount = week.phrases.length;
+  const dayOfWeek = Math.min(Math.max(day - start, 0), 6);
+  const phraseIndex = Math.min(phraseCount - 1, Math.floor((dayOfWeek * phraseCount) / 7));
+  const phrase = week.phrases[phraseIndex];
+
+  const part = document.getElementById("meditationPart");
+  part.textContent = `Part ${phraseIndex + 1} of ${phraseCount}`;
+  part.hidden = phraseCount < 2;
+
+  document.getElementById("meditationQuote").textContent = phrase.quote;
+  document.getElementById("readingQuestions").textContent = phrase.question;
+  document.getElementById("readingPrayer").textContent = phrase.prayer;
 }
 
 function renderCurrentEntry() {
