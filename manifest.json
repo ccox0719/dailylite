@@ -3,17 +3,17 @@
   "short_name": "Daily Light",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#fdfbf7",
-  "theme_color": "#b8873b",
+  "background_color": "#f7f3ec",
+  "theme_color": "#f7f3ec",
   "icons": [
     {
-      "src": "icon.png",
-      "sizes": "512x512",
+      "src": "daily-light-192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
+      "src": "daily-light-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }

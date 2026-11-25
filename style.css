@@ -1144,3 +1144,6 @@ button {
     initial-letter: 2;
   }
 }
+
+#installApp[hidden] { display: none; }
+.install-dialog p { margin: 0 0 1rem; line-height: 1.55; }
