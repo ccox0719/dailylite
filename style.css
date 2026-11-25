@@ -1000,3 +1000,14 @@ button {
 .meditation:not([hidden]) ~ .reading-extra .section-label {
   margin-top: 40px;
 }
+
+/* One-line Scripture context for the weekly walk */
+#meditationVerseContext {
+  max-width: var(--measure);
+  margin: 14px 0 0;
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+}
