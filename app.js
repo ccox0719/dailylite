@@ -920,7 +920,12 @@ function renderMeditation(plan, entry) {
   part.textContent = `Part ${phraseIndex + 1} of ${phraseCount}`;
   part.hidden = phraseCount < 2;
 
-  document.getElementById("meditationQuote").textContent = phrase.quote;
+  const quoteEl = document.getElementById("meditationQuote");
+  quoteEl.textContent = phrase.quote;
+  // Size the phrase by length: short phrases stay large, long ones step down.
+  const quoteLength = phrase.quote.length;
+  quoteEl.classList.toggle("is-medium", quoteLength > 40 && quoteLength <= 80);
+  quoteEl.classList.toggle("is-long", quoteLength > 80);
   document.getElementById("readingQuestions").textContent = phrase.question;
   document.getElementById("readingPrayer").textContent = phrase.prayer;
 }
