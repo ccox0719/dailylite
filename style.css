@@ -1082,3 +1082,48 @@ button {
   cursor: pointer;
 }
 .jump-actions button[type="submit"] { background: var(--accent-soft); }
+
+/* ===========================================================
+   Weekly walk — left-aligned to match the rest of the page
+   =========================================================== */
+.meditation {
+  text-align: left;
+}
+
+.meditation::before {
+  left: 0;
+  transform: none;
+}
+
+.meditation-heading {
+  align-items: flex-start;
+}
+
+.meditation-source {
+  justify-content: flex-start;
+}
+
+#meditationVerseContext {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.meditation h1 {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Opening quote hangs in the margin so the words align with the text */
+.meditation h1::before {
+  margin-left: -0.36em;
+  margin-right: 0;
+}
+
+.meditation details[open] {
+  margin: 0;
+}
+
+.meditation details[open] summary {
+  justify-content: flex-start;
+}
