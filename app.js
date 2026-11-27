@@ -893,8 +893,9 @@ function renderMeditation(plan, entry) {
     : null;
   const week = plan?.id === DWELLING_PLAN_ID ? meditationWeeks[start] : null;
   panel.hidden = !week;
-  document.getElementById("readingTitleRow").hidden = Boolean(week);
-  document.getElementById("readingBody").hidden = Boolean(week);
+  // The day's own title and devotional always show; the walk sits above them.
+  document.getElementById("readingTitleRow").hidden = false;
+  document.getElementById("readingBody").hidden = false;
   const contextPanel = document.getElementById("meditationContextPanel");
   if (!week) {
     contextPanel.open = false;
@@ -932,8 +933,14 @@ function renderMeditation(plan, entry) {
   const quoteLength = phrase.quote.length;
   quoteEl.classList.toggle("is-medium", quoteLength > 40 && quoteLength <= 80);
   quoteEl.classList.toggle("is-long", quoteLength > 80);
-  document.getElementById("readingQuestions").textContent = phrase.question;
-  document.getElementById("readingPrayer").textContent = phrase.prayer;
+
+  // The walk's own question and prayer stay with the phrase. Reflect and Pray
+  // below Scripture keep the day's prompts, which match the chapter.
+  const walkQuestion = phrase.question || "";
+  const walkPrayer = phrase.prayer || "";
+  document.getElementById("walkQuestion").textContent = walkQuestion;
+  document.getElementById("walkPrayer").textContent = walkPrayer;
+  document.getElementById("walkPrompt").hidden = !walkQuestion && !walkPrayer;
 }
 
 function renderCurrentEntry() {

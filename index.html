@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Daily Lite</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <link rel="stylesheet" href="style.css?v=compact" />
+  <link rel="stylesheet" href="style.css?v=walk-prompts" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="manifest" href="manifest.json?v=lite" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=flame" />
@@ -144,10 +144,6 @@
           <span id="progressLabel" class="reading-day"></span>
         </div>
 
-
-        <div class="reading-title-row" id="readingTitleRow">
-          <h1 id="readingTitle" class="reading-title"></h1>
-        </div>
       </header>
 
       <section class="meditation" id="meditation" aria-labelledby="meditationQuote" hidden>
@@ -159,6 +155,11 @@
           </span>
         </div>
         <h1 id="meditationQuote" aria-live="polite"></h1>
+        <div class="walk-prompt" id="walkPrompt" hidden>
+          <p class="walk-prompt-label">As you walk</p>
+          <p class="walk-question" id="walkQuestion"></p>
+          <p class="walk-prayer" id="walkPrayer"></p>
+        </div>
         <details id="meditationContextPanel">
           <summary>About this week</summary>
           <h2 id="meditationTitle"></h2>
@@ -168,6 +169,11 @@
           <p>Repeat a phrase whenever you like. On the weekend, return to the words that stayed with you. If you miss a walk, pick up wherever you want.</p>
         </details>
       </section>
+
+      <div class="reading-title-row" id="readingTitleRow">
+        <p class="reading-kicker">Today’s reading</p>
+        <h1 id="readingTitle" class="reading-title"></h1>
+      </div>
 
       <section class="reading-body" id="readingBody"></section>
 
@@ -293,7 +299,7 @@
     <div id="toast" class="toast"></div>
   </div>
 
-  <script src="app.js?v=day-one-meditations"></script>
+  <script src="app.js?v=walk-prompts"></script>
   <script src="install.js?v=compact" defer></script>
 </body>
 </html>

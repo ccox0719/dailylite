@@ -1375,3 +1375,75 @@ body.dark-mode .install-now,
 body.dark-mode .install-banner-go {
   color: #1a140b;
 }
+
+/* ===========================================================
+   Walk prompt inside the weekly card, and the day's reading below it
+   =========================================================== */
+.walk-prompt {
+  max-width: 30em;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.walk-prompt[hidden] {
+  display: none;
+}
+
+.walk-prompt-label {
+  margin: 0 0 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.walk-question,
+.walk-prayer {
+  margin: 0 0 8px;
+  font-family: var(--devotional-font-family);
+  font-size: calc(var(--devotional-font-size) + 1px);
+  line-height: 1.5;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.walk-prayer {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.walk-prayer:empty,
+.walk-question:empty {
+  display: none;
+}
+
+/* "Today's reading" — the day's title and devotional after the walk */
+.reading-kicker {
+  display: none;
+  margin: 0 0 8px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.meditation:not([hidden]) + .reading-title-row {
+  margin-top: 40px;
+}
+
+.meditation:not([hidden]) + .reading-title-row .reading-kicker {
+  display: block;
+}
+
+/* With the walk phrase above, the day's title steps down a size */
+.meditation:not([hidden]) + .reading-title-row .reading-title {
+  font-size: clamp(1.9rem, 8vw, 2.5rem);
+}
+
+.meditation:not([hidden]) ~ .reading-body {
+  margin-top: 18px;
+}
